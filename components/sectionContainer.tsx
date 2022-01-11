@@ -1,0 +1,9 @@
+export default function SectionContainer(props) {
+    return (
+        <section className={`py-14 lg:py-24 ${props.className || ""}`}>
+            <div className="px-7">
+                {props.children}
+            </div>
+        </section>
+    )
+}
