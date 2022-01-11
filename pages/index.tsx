@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           <div>
             <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Heading one</h2>
             <p className="max-w-xl py-6 text-center lg:text-left">
-              I'm baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven't heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90's raclette vegan tumeric pork belly bushwick brooklyn.
+              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
             </p>
             <Button text="Button" color="primary" className="mr-2" />
             <Button text="Button" color="" />
@@ -30,6 +30,7 @@ const Home: NextPage = () => {
               src="/images/homepage-video-ss.jpg"
               width={677}
               height={400}
+              alt="Video Screenshot with Play Button"
             />
           </div>
         </div>
