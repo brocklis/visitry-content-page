@@ -35,6 +35,26 @@ const Home: NextPage = () => {
           </div>
         </div>
       </SectionContainer>
+      <SectionContainer className="pt-20 bg-green-s">
+        <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+          <div className="flex justify-center shadow-standard mt-10 lg:mt-0">
+            <Image
+              className="cursor-pointer"
+              onClick={ () => setShowModal(true) }
+              src="/images/phone.png"
+              width={750}
+              height={729}
+              alt="iPhone"
+            />
+          </div>
+          <div>
+            <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Clinician</h2>
+            <p className="max-w-xl py-6 text-center lg:text-left">
+              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+            </p>
+          </div>
+        </div>
+      </SectionContainer>
       </Layout>
       </>
   )
