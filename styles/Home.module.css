@@ -108,6 +108,29 @@
   margin-left: 0.5rem;
 }
 
+.heart-svg-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.heart {
+    fill: none;
+    stroke: #DFE169;
+    stroke-width: 8px;
+
+/* Stroke-dasharray property */
+    stroke-dasharray: 2700px;
+    stroke-dashoffset: 2700px;
+    animation: move 7s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

@@ -37,15 +37,22 @@ const Home: NextPage = () => {
       </SectionContainer>
       <SectionContainer className="pt-20 bg-green-s">
         <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
-          <div className="flex justify-center shadow-standard mt-10 lg:mt-0">
-            <Image
-              className="cursor-pointer"
-              onClick={ () => setShowModal(true) }
-              src="/images/phone.png"
-              width={750}
-              height={729}
-              alt="iPhone"
-            />
+          <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+            <div className={styles.heartSvgContainer}>
+              <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" stroke-width="8" stroke-miterlimit="10"/>
+              </svg>
+            </div>
+            <div className="absolute left-1/2 translate-x-[-20%]">
+              <Image
+                className="cursor-pointer"
+                onClick={ () => setShowModal(true) }
+                src="/images/phone.png"
+                width={212}
+                height={400}
+                alt="iPhone"
+              />
+            </div>
           </div>
           <div>
             <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Clinician</h2>
