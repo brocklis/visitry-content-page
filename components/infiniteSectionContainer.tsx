@@ -4,8 +4,9 @@ import SectionContainer from './sectionContainer'
 
 export default function InfiniteSectionContainer(props) {
     const [ currBenefitIndex, setBenefitIndex ] = useState( 0 )
+
     function loadMoreBenefits(shouldLoadMore, entry) {
-        const sections = document.querySelectorAll('.section')
+        const sections = document.querySelectorAll(`#${props.id} .section`)
         if ( shouldLoadMore ) {
             if ( currBenefitIndex >= sections.length - 1 ) {
                 return
@@ -19,7 +20,7 @@ export default function InfiniteSectionContainer(props) {
     }
     return (
         <>
-            <SectionContainer className={props.className}>
+            <SectionContainer className={props.className} id={props.id || ""}>
                 {props.children}
             </SectionContainer>
             <InView onChange={loadMoreBenefits} />
