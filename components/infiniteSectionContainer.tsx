@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { InView } from 'react-intersection-observer'
 import SectionContainer from './sectionContainer'
 
-export default function InfiniteSectionContainer(props) {
+export default function InfiniteSectionContainer(props: {className: string, slideInClassName: string, slideOutClassName: string, id: string, children: any}) {
     const [ currBenefitIndex, setBenefitIndex ] = useState( 0 )
 
     function loadMoreBenefits(shouldLoadMore, entry) {
@@ -12,9 +12,11 @@ export default function InfiniteSectionContainer(props) {
                 return
             }
             const newBenefitIndex = currBenefitIndex + 1
-            setBenefitIndex( newBenefitIndex )
-            sections.forEach(section => section.classList.add('hidden'))
+            sections[currBenefitIndex].classList.remove(props.slideInClassName)
+            sections[currBenefitIndex].classList.add(props.slideOutClassName)
+            sections[newBenefitIndex].classList.add(props.slideInClassName)
             sections[newBenefitIndex].classList.remove('hidden')
+            setBenefitIndex( newBenefitIndex )
             window.scrollBy(0, -200)
         }
     }
