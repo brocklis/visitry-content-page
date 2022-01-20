@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </SectionContainer>
-      <SectionContainer className="pt-20 bg-green-s">
+      <InfiniteSectionContainer className="pt-20" id="how-it-works">
         <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
           <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
             <div className={styles['heart-svg-container']}>
@@ -62,71 +62,71 @@ const Home: NextPage = () => {
             </p>
           </div>
         </div>
-      </SectionContainer>
-      <InfiniteSectionContainer className="pt-20" id="how-it-works" slideInClassName={styles['slide-in']} slideOutClassName={styles['slide-out']}>
-        <h1 className="text-2xl">How It Works</h1>
-        <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
-          <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+        <div><h1 className="text-5xl text-center">How It Works</h1></div>
+        <div>
+          <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div>
+                <Image
+                  className="cursor-pointer"
+                  onClick={ () => setShowModal(true) }
+                  src="/images/phone.png"
+                  width={212}
+                  height={400}
+                  alt="iPhone"
+                />
+              </div>
+            </div>
             <div>
-              <Image
-                className="cursor-pointer"
-                onClick={ () => setShowModal(true) }
-                src="/images/phone.png"
-                width={212}
-                height={400}
-                alt="iPhone"
-              />
+              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1</h2>
+              <p className="max-w-xl py-6 text-center lg:text-left">
+                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              </p>
             </div>
           </div>
-          <div>
-            <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1</h2>
-            <p className="max-w-xl py-6 text-center lg:text-left">
-              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-            </p>
-          </div>
-        </div>
-        <div className="section hidden flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
-          <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+          <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div>
+                <Image
+                  className="cursor-pointer"
+                  onClick={ () => setShowModal(true) }
+                  src="/images/phone.png"
+                  width={212}
+                  height={400}
+                  alt="iPhone"
+                />
+              </div>
+            </div>
             <div>
-              <Image
-                className="cursor-pointer"
-                onClick={ () => setShowModal(true) }
-                src="/images/phone.png"
-                width={212}
-                height={400}
-                alt="iPhone"
-              />
+              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 2</h2>
+              <p className="max-w-xl py-6 text-center lg:text-left">
+                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              </p>
             </div>
           </div>
-          <div>
-            <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 2</h2>
-            <p className="max-w-xl py-6 text-center lg:text-left">
-              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-            </p>
-          </div>
-        </div>
-        <div className="section hidden flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
-          <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
-            <div>
-              <Image
-                className="cursor-pointer"
-                onClick={ () => setShowModal(true) }
-                src="/images/phone.png"
-                width={212}
-                height={400}
-                alt="iPhone"
-              />
+          <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div>
+                <Image
+                  className="cursor-pointer"
+                  onClick={ () => setShowModal(true) }
+                  src="/images/phone.png"
+                  width={212}
+                  height={400}
+                  alt="iPhone"
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 3</h2>
-            <p className="max-w-xl py-6 text-center lg:text-left">
-              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-            </p>
+            <div>
+              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 3</h2>
+              <p className="max-w-xl py-6 text-center lg:text-left">
+                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              </p>
+            </div>
           </div>
         </div>
       </InfiniteSectionContainer>
-      <SectionContainer className="pt-20 bg-purple">
+      <InfiniteSectionContainer className="pt-20" id="how-it-works-2">
         <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
           <div>
             <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Agencies</h2>
@@ -152,66 +152,66 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </SectionContainer>
-      <InfiniteSectionContainer id="how-it-works-2"  slideInClassName={styles['slide-in']} slideOutClassName={styles['slide-out']}>
-        <h1 className="text-2xl">How It Works</h1>
-        <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
-          <div>
-            <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1B</h2>
-            <p className="max-w-xl py-6 text-center lg:text-left">
-              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-            </p>
-          </div>
-          <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+        <h1 className="text-5xl text-center">How It Works</h1>
+        <div>
+          <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
             <div>
-              <Image
-                className="cursor-pointer"
-                onClick={ () => setShowModal(true) }
-                src="/images/phone.png"
-                width={212}
-                height={400}
-                alt="iPhone"
-              />
+              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1B</h2>
+              <p className="max-w-xl py-6 text-center lg:text-left">
+                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              </p>
+            </div>
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div>
+                <Image
+                  className="cursor-pointer"
+                  onClick={ () => setShowModal(true) }
+                  src="/images/phone.png"
+                  width={212}
+                  height={400}
+                  alt="iPhone"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="section hidden flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
-          <div>
-            <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 2B</h2>
-            <p className="max-w-xl py-6 text-center lg:text-left">
-              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-            </p>
-          </div>
-          <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+          <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
             <div>
-              <Image
-                className="cursor-pointer"
-                onClick={ () => setShowModal(true) }
-                src="/images/phone.png"
-                width={212}
-                height={400}
-                alt="iPhone"
-              />
+              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 2B</h2>
+              <p className="max-w-xl py-6 text-center lg:text-left">
+                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              </p>
+            </div>
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div>
+                <Image
+                  className="cursor-pointer"
+                  onClick={ () => setShowModal(true) }
+                  src="/images/phone.png"
+                  width={212}
+                  height={400}
+                  alt="iPhone"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="section hidden flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
-          <div>
-            <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 3B</h2>
-            <p className="max-w-xl py-6 text-center lg:text-left">
-              I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-            </p>
-          </div>
-          <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+          <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
             <div>
-              <Image
-                className="cursor-pointer"
-                onClick={ () => setShowModal(true) }
-                src="/images/phone.png"
-                width={212}
-                height={400}
-                alt="iPhone"
-              />
+              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 3B</h2>
+              <p className="max-w-xl py-6 text-center lg:text-left">
+                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              </p>
+            </div>
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div>
+                <Image
+                  className="cursor-pointer"
+                  onClick={ () => setShowModal(true) }
+                  src="/images/phone.png"
+                  width={212}
+                  height={400}
+                  alt="iPhone"
+                />
+              </div>
             </div>
           </div>
         </div>
