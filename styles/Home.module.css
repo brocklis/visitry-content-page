@@ -108,6 +108,72 @@
   margin-left: 0.5rem;
 }
 
+.heart-svg-container {
+  margin: 0 auto;
+}
+
+.heart {
+    fill: none;
+    stroke: #DFE169;
+    stroke-width: 8px;
+
+/* Stroke-dasharray property */
+    stroke-dasharray: 2700px;
+    stroke-dashoffset: 2700px;
+    animation: move 7s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.slide-out {
+  animation: slide-out-animation 3s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.slide-in {
+  animation: slide-in-animation 3s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-out-animation {
+  0% {
+    display: block;
+    opacity: 1;
+    position: relative;
+    bottom: 0;
+  }
+  99% {
+    display: block;
+    opacity: 0;
+    bottom: 500px;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+@keyframes slide-in-animation {
+  0% {
+    display: block;
+    opacity: 0;
+    position: relative;
+    bottom: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    bottom: 500px;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
