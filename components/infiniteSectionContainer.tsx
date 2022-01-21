@@ -25,21 +25,25 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
             }
             introRef.current.childNodes[0].children[0].style.opacity = subChild0Opacity
             introRef.current.childNodes[0].children[1].style.opacity = subChild1Opacity
-            introRef.current.childNodes[0].children[2].style.opacity = subChild2Opacity
+            introRef.current.childNodes[0].children[2].style.opacity = Math.min(1, subChild2Opacity * 2)
         } else {
             heroRef.current.style.opacity = 1
             headerRef.current.style.opacity = 0
             introRef.current.style.opacity = 0
         }
         if ( opacity >= 1 ) {
-            headerRef.current.style.opacity = opacity
+            if ( introRef.current.childNodes[0].children[2].style.opacity >= 1 ) {
+                headerRef.current.style.opacity = 0
+            } else {
+                headerRef.current.style.opacity = opacity
+            }
             introRef.current.style.transform = `translateY(-${yTranslation}px)`
         } else {
             introRef.current.style.transform = ``
         }
     }
     useEffect(() => {
-        setHeight(heroRef.current.offsetHeight * 4)
+        setHeight(heroRef.current.offsetHeight * 2.5)
         console.log(heroRef.current.offsetHeight + headerRef.current.offsetHeight + introRef.current.offsetHeight)
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
@@ -48,7 +52,7 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
         <section className={`relative ${props.className || ""}`} style={{"height": height}} id={props.id || ""} ref={ref}>
             <div className="sticky-container w-full sticky top-0" id={props.id || ""}>
                 <div className="relative w-full h-screen">
-                    <div className="hero-parent absolute top-0 w-full h-screen pt-20 opacity-0" ref={heroRef}>
+                    <div className="hero-parent absolute top-0 w-full h-screen pt-20 opacity-1" ref={heroRef}>
                         {props.children[0]}
                     </div>
                     <div className="header-parent absolute top-0 w-full h-screen pt-20 opacity-0" ref={headerRef}>

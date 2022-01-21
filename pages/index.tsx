@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </SectionContainer>
-      <InfiniteSectionContainer className="pt-20" id="how-it-works">
+      <InfiniteSectionContainer className="translate-y-[10vh] md:translate-y-[20vh] pb-20 md:pb-10 lg:pb-0 mb-[40vh] md:mb-[35vh] lg:mb-0" id="how-it-works">
         <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
           <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
             <div className={styles['heart-svg-container']}>
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div><h1 className="text-5xl text-center">How It Works</h1></div>
-        <div>
+        <div className="pt-10">
           <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
             <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
               <div>
@@ -126,7 +126,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </InfiniteSectionContainer>
-      <InfiniteSectionContainer className="pt-20" id="how-it-works-2">
+      <InfiniteSectionContainer className="md:top-[-20rem] translate-y-[10vh] md:translate-y-[20vh] mt-[5vh] md:mt-0 mb-[80vh] md:mb-0 lg:mb-[-30vh]" id="how-it-works-2">
         <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
           <div>
             <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Agencies</h2>
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <h1 className="text-5xl text-center">How It Works</h1>
-        <div>
+        <div className="pt-20">
           <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
             <div>
               <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1B</h2>
@@ -216,6 +216,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </InfiniteSectionContainer>
+      <p>Testing 123</p>
       </Layout>
       </>
   )
