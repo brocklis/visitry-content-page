@@ -25,24 +25,28 @@ export default function Footer() {
             src="/images/facebook.svg"
             width={40}
             height={40}
+            alt="Test"
           />
           <Image
             className="rounded-2xl"
             src="/images/instagram.svg"
             width={40}
             height={40}
+            alt="Test"
           />
           <Image
             className="rounded-2xl"
             src="/images/twitter.svg"
             width={40}
             height={40}
+            alt="Test"
           />
           <Image
             className="rounded-2xl"
             src="/images/linkedin.svg"
             width={40}
             height={40}
+            alt="Test"
           />
         </div>
       </div>

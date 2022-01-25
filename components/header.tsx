@@ -45,6 +45,7 @@ export default function Header(props) {
                     src="/images/logo-white.svg"
                     width={215}
                     height={47}
+                    alt="Test"
                 />
                 <div className="flex justify-center">
                 <MobileDropdown />
