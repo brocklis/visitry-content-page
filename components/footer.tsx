@@ -8,9 +8,10 @@ export default function Footer() {
             src="/images/logo-footer.svg"
             width={140}
             height={88}
+            alt="Test"
           />
           <p className="max-w-lg mt-6 text-white">
-            I'm baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix
+            I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix
             unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache
           </p>
         </div>
