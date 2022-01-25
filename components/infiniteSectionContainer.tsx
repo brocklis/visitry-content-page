@@ -44,7 +44,6 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
     }
     useEffect(() => {
         setHeight(heroRef.current.offsetHeight * 2.5)
-        console.log(heroRef.current.offsetHeight + headerRef.current.offsetHeight + introRef.current.offsetHeight)
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     });

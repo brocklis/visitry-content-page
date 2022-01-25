@@ -3,7 +3,14 @@ import Button from './button'
 import Logo from './logo'
 import Image from "next/image"
 import MobileDropdown from './mobileDropdown'
-export default function Header(props) {
+type Props = {
+    defaultColor?: string
+    defaultBGColor?: string
+    scrollBGColor?: string
+    scrollColor?: string
+    forwardedRef?: any
+}
+export default function Header(props: Props) {
     const [color, setColor] = useState(props.defaultColor)
     const [backgroundColor, setBackgroundColor] = useState(props.defaultBGColor)
     useEffect(() => {
@@ -21,7 +28,7 @@ export default function Header(props) {
         }
     }
     return (
-        <div style={{ backgroundColor: backgroundColor }} className='fixed w-full flex py-4 top-0 z-10'>
+        <div style={{ backgroundColor: backgroundColor }} className='fixed w-full flex py-4 top-0 z-10' ref={props.forwardedRef}>
             <div className="hidden lg:flex w-11/12 mx-auto justify-between" style={{ maxWidth: "80rem" }}>
                 <div className="flex">
                     <Logo fill={color} />
