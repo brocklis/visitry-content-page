@@ -7,6 +7,45 @@ import SectionContainer from '../components/sectionContainer'
 import InfiniteSectionContainer from '../components/infiniteSectionContainer'
 import PopUpVideo from '../components/popupVideo'
 import styles from '../styles/Home.module.css'
+import FAQ from '../components/faq'
+
+const clinicianFAQ = [
+  {
+    question: "Test",
+    answer: "Test",
+  },
+  {
+    question: "Test",
+    answer: "Test",
+  },
+  {
+    question: "Test",
+    answer: "Test",
+  },
+  {
+    question: "Test",
+    answer: "Test",
+  },
+]
+
+const agencyFAQ = [
+  {
+    question: "Test",
+    answer: "Test",
+  },
+  {
+    question: "Test",
+    answer: "Test",
+  },
+  {
+    question: "Test",
+    answer: "Test",
+  },
+  {
+    question: "Test",
+    answer: "Test",
+  },
+]
 
 const Home: NextPage = () => {
   const [showModal, setShowModal] = useState(false)
@@ -38,7 +77,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </SectionContainer>
-        <InfiniteSectionContainer className="translate-y-[10vh] md:translate-y-[20vh] pb-20 md:pb-10 lg:pb-0 mb-[40vh] md:mb-[35vh] lg:mb-0" id="how-it-works">
+        <InfiniteSectionContainer className="pt-80 gradient-bg translate-y-[10vh] md:translate-y-[30vh] pb-20 md:pb-10 lg:pb-0 mb-[40vh] md:mb-[35vh] lg:mb-0" id="how-it-works">
           <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
             <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
               <div className={styles['heart-svg-container']}>
@@ -58,15 +97,15 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Clinician</h2>
-              <p className="max-w-xl py-6 text-center lg:text-left">
+              <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinician</h2>
+              <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
             </div>
           </div>
           <div><h1 className="text-5xl text-center">How It Works</h1></div>
           <div className="pt-10">
-            <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto justify-between w-11/12">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -80,13 +119,13 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 1</h2>
+                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
             </div>
-            <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 justify-between w-11/12 mx-auto">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -100,13 +139,13 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 2</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 2</h2>
+                <p className="max-w-xl text-lg py-6 text-center lg:text-left">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
             </div>
-            <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 justify-between w-11/12 mx-auto">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -120,8 +159,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 3</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 3</h2>
+                <p className="max-w-xl text-lg py-6 text-center lg:text-left">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
@@ -218,6 +257,39 @@ const Home: NextPage = () => {
             </div>
           </div>
         </InfiniteSectionContainer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#563078" fill-opacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#563078" fill-opacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+        </svg>
+        <div className="max-w-7xl mx-auto w-11/12 py-20">
+          <h2 className="font-merri text-5xl font-bold text-center mb-14">FAQ</h2>
+          <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0">
+            <div className="w-full lg:w-1/2">
+              <h3 className="font-merri text-3xl font-bold text-center mb-3">Clinician</h3>
+              {clinicianFAQ.map((item) => (
+                <FAQ
+                  question={item.question}
+                  answer={item.answer}
+                />
+              ))}
+            </div>
+            <div className="w-full lg:w-1/2">
+            <h3 className="font-merri text-3xl font-bold text-center mb-3">Agency</h3>
+              {agencyFAQ.map((item) => (
+                <FAQ
+                  question={item.question}
+                  answer={item.answer}
+                  styling="bg-purple"
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="py-20">
+          <h2 className="font-merri text-5xl font-bold text-center mb-14">Contact Information</h2>
+        </div>
       </Layout>
     </>
   )
