@@ -6,6 +6,10 @@
   background: linear-gradient(46.98deg, #00A38B 23%, #88CDAC 95.01%);
 }
 
+#menu-header.scrolling {
+    box-shadow: 0 6px 20px -4px #333;
+}
+
 html,
 body {
   padding: 0;

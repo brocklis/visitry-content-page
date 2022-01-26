@@ -5,14 +5,18 @@ import Image from "next/image"
 import MobileDropdown from './mobileDropdown'
 type Props = {
     defaultColor?: string
+    defaultTextColor?: string
     defaultBGColor?: string
     scrollBGColor?: string
     scrollColor?: string
+    scrollTextColor?: string
     forwardedRef?: any
 }
 export default function Header(props: Props) {
     const [color, setColor] = useState(props.defaultColor)
+    const [textColor, setTextColor] = useState(props.defaultTextColor)
     const [backgroundColor, setBackgroundColor] = useState(props.defaultBGColor)
+    const [additionalClasses, setAdditionalClasses] = useState("")
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
@@ -21,14 +25,18 @@ export default function Header(props: Props) {
     const handleScroll = () => {
         if (window.scrollY > 50) {
             setBackgroundColor(props.scrollBGColor)
+            setTextColor(props.scrollTextColor)
             setColor(props.scrollColor)
+            setAdditionalClasses('scrolling')
         } else {
             setBackgroundColor(props.defaultBGColor)
+            setTextColor(props.defaultTextColor)
             setColor(props.defaultColor)
+            setAdditionalClasses('')
         }
     }
     return (
-        <div style={{ backgroundColor: backgroundColor }} className='fixed w-full flex py-4 top-0 z-10' ref={props.forwardedRef}>
+        <div style={{ backgroundColor: backgroundColor }} className={`fixed w-full flex py-4 top-0 z-10 ${additionalClasses}`} id="menu-header" ref={props.forwardedRef}>
             <div className="hidden lg:flex w-11/12 mx-auto justify-between" style={{ maxWidth: "80rem" }}>
                 <div className="flex">
                     <Logo fill={color} />
@@ -37,7 +45,7 @@ export default function Header(props: Props) {
 
                 </div>
                 <div className="flex items-center space-x-10">
-                    <ul className="flex space-x-5 text-white text-lg open font-bold">
+                    <ul className="flex space-x-5 text-lg open font-bold" style={{ color: textColor }}>
                         <li>Button</li>
                         <li>Button</li>
                         <li>Button</li>
