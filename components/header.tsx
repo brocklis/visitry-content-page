@@ -37,12 +37,11 @@ export default function Header(props: Props) {
 
                 </div>
                 <div className="flex items-center space-x-10">
-                    <ul className="flex space-x-5 text-white text-lg open font-bold">
-                        <li>Button</li>
-                        <li>Button</li>
-                        <li>Button</li>
-                        <li>Button</li>
-                        <li>Button</li>
+                    <ul className="flex space-x-8 text-white text-lg open font-bold">
+                        <li>Clinician</li>
+                        <li>Agency</li>
+                        <li>FAQ</li>
+                        <li>Contact</li>
                     </ul>
                     <Button text="Call to action" color="primary" styling="px-10" />
                 </div>
