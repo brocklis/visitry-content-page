@@ -23,7 +23,6 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
     const heroRef = useRef(null)
     const headerRef = useRef(null)
     const introRef = useRef(null)
-    const [ height, setHeight ] = useState(5000)
     const handleScroll = (evt) => {
         const refStyle = window.getComputedStyle(ref.current)
         const refPaddingTop = parseInt(refStyle.getPropertyValue('padding-top'))
@@ -66,11 +65,9 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
         }
     }
     useEffect(() => {
-        setHeight(heroRef.current.offsetHeight + headerRef.current.offsetHeight + introRef.current.offsetHeight + 300)
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     });
-    // <section className={`relative ${props.className || ""}`} style={/*{"height": height}*/} id={props.id || ""} ref={ref}>
     return (
         <section className={`relative ${props.className || ""}`} id={props.id || ""} ref={ref}>
             <div className="sticky-container w-full sticky top-0" id={props.id || ""}>

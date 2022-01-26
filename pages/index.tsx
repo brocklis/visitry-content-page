@@ -169,7 +169,7 @@ const Home: NextPage = () => {
         </InfiniteSectionContainer>
         <div className="lg:mb-0 md:mt-[-26vh] lg:mt-0 translate-y-0 xl:translate-y-[150px]">
           <svg className="xl:pt-[10vh]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#563078" fill-opacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
           </svg>
         </div>
         <InfiniteSectionContainer className="bg-purple mb-[-400px] h-[3600px] md:h-[3200px] lg:h-[2500px] xl:h-[2000px]" id="how-it-works-2">
@@ -264,7 +264,7 @@ const Home: NextPage = () => {
         </InfiniteSectionContainer>
         <div className="pt-0 mt-[390px] md:mt-[350px]">
           <svg className="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#563078" fill-opacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+            <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
           </svg>
         </div>
         <div className="max-w-7xl mx-auto w-11/12 py-20">
@@ -272,8 +272,9 @@ const Home: NextPage = () => {
           <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0">
             <div className="w-full lg:w-1/2">
               <h3 className="font-merri text-3xl font-bold text-center mb-3">Clinician</h3>
-              {clinicianFAQ.map((item) => (
+              {clinicianFAQ.map((item, idx) => (
                 <FAQ
+                  key={idx}
                   question={item.question}
                   answer={item.answer}
                 />
@@ -281,8 +282,9 @@ const Home: NextPage = () => {
             </div>
             <div className="w-full lg:w-1/2">
             <h3 className="font-merri text-3xl font-bold text-center mb-3">Agency</h3>
-              {agencyFAQ.map((item) => (
+              {agencyFAQ.map((item, idx) => (
                 <FAQ
+                  key={idx}
                   question={item.question}
                   answer={item.answer}
                   styling="bg-purple"
