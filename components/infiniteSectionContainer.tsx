@@ -1,5 +1,23 @@
 import { useState, useEffect, useRef } from 'react'
 
+function getTranslate(item: HTMLElement): number | number[] | undefined {
+    const transArr = []
+    if (!window.getComputedStyle) {
+      return
+    }
+    const style = window.getComputedStyle(item)
+    const transform = style.transform || style.webkitTransform
+    let mat = transform.match(/^matrix3d\((.+)\)$/)
+    if (mat) {
+      return parseFloat(mat[1].split(', ')[13])
+    }
+    mat = transform.match(/^matrix\((.+)\)$/)
+    mat ? transArr.push(parseInt(mat[1].split(', ')[4], 10)) : transArr.push(0)
+    mat ? transArr.push(parseInt(mat[1].split(', ')[5], 10)) : transArr.push(0)
+
+    return transArr
+  }
+
 export default function InfiniteSectionContainer(props: {className?: string, id?: string, children: any}) {
     const ref = useRef(null)
     const heroRef = useRef(null)
@@ -7,8 +25,12 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
     const introRef = useRef(null)
     const [ height, setHeight ] = useState(5000)
     const handleScroll = (evt) => {
+        const refStyle = window.getComputedStyle(ref.current)
+        const refPaddingTop = parseInt(refStyle.getPropertyValue('padding-top'))
+        const refMarginTop = parseInt(refStyle.getPropertyValue('margin-top'))
+        const refTranslateY = getTranslate(ref.current)[1]
         const currentScrollY = window.scrollY
-        const refScrollY = ref.current.offsetTop
+        const refScrollY = ref.current.offsetTop + refPaddingTop + refMarginTop + refTranslateY
         const heroHeight = heroRef.current.offsetHeight
         const opacity = Math.min(1, ( currentScrollY - refScrollY ) / heroHeight)
         const yTranslation = currentScrollY - (refScrollY + heroHeight)
@@ -16,11 +38,12 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
             heroRef.current.style.opacity = 1 - opacity
             headerRef.current.style.opacity = opacity
             introRef.current.style.opacity = opacity
-            const subChild2Opacity = Math.min(1, ( ( yTranslation - introRef.current.childNodes[0].children[0].offsetHeight ) / introRef.current.childNodes[0].children[1].offsetHeight ) )
+            const subChild2Opacity = Math.min(1, 3 * ( ( yTranslation - introRef.current.childNodes[0].children[0].offsetHeight ) / introRef.current.childNodes[0].children[1].offsetHeight ) )
             let subChild1Opacity = Math.min(1, ( yTranslation / introRef.current.childNodes[0].children[0].offsetHeight ))
             let subChild0Opacity = 1 - subChild1Opacity
-            if ( subChild2Opacity > 0 ) {
-                subChild1Opacity = 1 - subChild2Opacity
+            if ( yTranslation > introRef.current.childNodes[0].children[0].offsetHeight ) {
+            /*if ( subChild2Opacity > 0 ) {*/
+                subChild1Opacity = 1 - subChild2Opacity / 3
                 subChild0Opacity = 0
             }
             introRef.current.childNodes[0].children[0].style.opacity = subChild0Opacity
@@ -43,21 +66,22 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
         }
     }
     useEffect(() => {
-        setHeight(heroRef.current.offsetHeight * 2.5)
+        setHeight(heroRef.current.offsetHeight + headerRef.current.offsetHeight + introRef.current.offsetHeight + 300)
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     });
+    // <section className={`relative ${props.className || ""}`} style={/*{"height": height}*/} id={props.id || ""} ref={ref}>
     return (
-        <section className={`relative ${props.className || ""}`} style={{"height": height}} id={props.id || ""} ref={ref}>
+        <section className={`relative ${props.className || ""}`} id={props.id || ""} ref={ref}>
             <div className="sticky-container w-full sticky top-0" id={props.id || ""}>
-                <div className="relative w-full h-screen">
-                    <div className="hero-parent absolute top-0 w-full h-screen pt-20 opacity-1" ref={heroRef}>
+                <div className="relative w-full">
+                    <div className="hero-parent absolute top-0 w-full pt-20 opacity-1" ref={heroRef}>
                         {props.children[0]}
                     </div>
-                    <div className="header-parent absolute top-0 w-full h-screen pt-20 opacity-0" ref={headerRef}>
+                    <div className="header-parent absolute top-0 w-full pt-20 opacity-0" ref={headerRef}>
                         {props.children[1]}
                     </div>
-                    <div className="intro-parent absolute top-0 w-full h-screen pt-20 opacity-0" ref={introRef}>
+                    <div className="intro-parent absolute top-0 w-full pt-20 opacity-0" ref={introRef}>
                         {props.children[2]}
                     </div>
                 </div>
