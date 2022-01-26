@@ -104,7 +104,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div><h1 className="text-5xl text-center">How It Works</h1></div>
-          <div className="pt-10">
+          <div className="pt-40">
             <div className="section flex flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto justify-between w-11/12">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <h1 className="text-5xl text-center translate-y-10">How It Works</h1>
-          <div className="pt-20 translate-y-10">
+          <div className="pt-40 translate-y-10">
             <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
               <div>
                 <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1B</h2>
