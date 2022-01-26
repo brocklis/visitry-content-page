@@ -268,8 +268,9 @@ const Home: NextPage = () => {
           <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0">
             <div className="w-full lg:w-1/2">
               <h3 className="font-merri text-3xl font-bold text-center mb-3">Clinician</h3>
-              {clinicianFAQ.map((item) => (
+              {clinicianFAQ.map((item, i) => (
                 <FAQ
+                  key={i}
                   question={item.question}
                   answer={item.answer}
                 />
@@ -277,8 +278,9 @@ const Home: NextPage = () => {
             </div>
             <div className="w-full lg:w-1/2">
             <h3 className="font-merri text-3xl font-bold text-center mb-3">Agency</h3>
-              {agencyFAQ.map((item) => (
+              {agencyFAQ.map((item, i) => (
                 <FAQ
+                  key={i}
                   question={item.question}
                   answer={item.answer}
                   styling="bg-purple"
