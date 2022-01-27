@@ -54,15 +54,15 @@ const Home: NextPage = () => {
       <PopUpVideo showModal={showModal} setShowModal={setShowModal} />
       <Layout>
         <SectionContainer className="text-white mt-20 pt-20 gradient-bg">
-          <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto py-20">
+          <div className="pt-36 flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto py-20">
             <div className="w-full lg:w-1/2">
               <h1 className="text-6xl font-merri font-bold text-center lg:text-left">Heading one</h1>
               <p className="font-open max-w-3xl lg:max-w-7xl mx-auto lg:mx-0 text-lg py-6 text-center lg:text-left leading-relaxed">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
               <div className="flex justify-center lg:justify-start">
-                <Button text="Button" color="primary" className="px-20 mr-2" />
-                <Button text="Button" color="" className="px-20" />
+                <Button text="For Agencies" color="primary" className="px-14 mr-2" />
+                <Button text="For Clinicians" color="" className="px-14" />
               </div>
             </div>
             <div className="flex justify-center shadow-standard mt-10 lg:mt-0 w-full lg:w-1/2">
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </SectionContainer>
-        <InfiniteSectionContainer className="pt-80 gradient-bg translate-y-10 h-[430vh] md:h-[350vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem]" id="how-it-works">
+        <InfiniteSectionContainer className="pt-80 bg-purple translate-y-10 h-[430vh] md:h-[350vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem]" id="how-it-works">
           <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20">
             <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
               <div className={styles['heart-svg-container']}>
@@ -96,16 +96,16 @@ const Home: NextPage = () => {
                 />
               </div>
             </div>
-            <div>
+            <div className="text-white">
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinician</h2>
               <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
             </div>
           </div>
-          <div><h1 className="text-5xl text-center translate-y-10">How It Works</h1></div>
+          <div><h1 className="text-5xl text-white text-center translate-y-10">How It Works</h1></div>
           <div>
-            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto w-11/12">
+            <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
+            <div className="text-white section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
+            <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
             <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
           </svg>
         </div>
-        <InfiniteSectionContainer className="bg-purple translate-y-10 h-[370vh] md:h-[350vh] content-box mb-0 md:mb-[-10rem]" id="how-it-works-2">
+        <InfiniteSectionContainer className="text-white bg-purple translate-y-10 h-[370vh] md:h-[350vh] content-box mb-0 md:mb-[-10rem]" id="how-it-works-2">
           <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20 justify-center">
             <div>
               <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Agencies</h2>
