@@ -77,7 +77,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </SectionContainer>
-        <InfiniteSectionContainer className="pt-80 gradient-bg translate-y-10 h-[430vh] md:h-[350vh] box-content mb-[-10rem] lg:mb-[-20rem]" id="how-it-works">
+        <InfiniteSectionContainer className="pt-80 gradient-bg translate-y-10 h-[430vh] md:h-[350vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem]" id="how-it-works">
           <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20">
             <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
               <div className={styles['heart-svg-container']}>
