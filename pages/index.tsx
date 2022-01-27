@@ -77,8 +77,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </SectionContainer>
-        <InfiniteSectionContainer className="pt-80 gradient-bg translate-y-10 pb-20 md:pb-10 lg:pb-0 mb-[-1000px] h-[5400px] md:h-[4900px] lg:h-[3600px] xl:h-[3200px]" id="how-it-works">
-          <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+        <InfiniteSectionContainer className="pt-80 gradient-bg translate-y-10 h-[430vh] md:h-[350vh] box-content mb-[-10rem] lg:mb-[-20rem]" id="how-it-works">
+          <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20">
             <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
               <div className={styles['heart-svg-container']}>
                 <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,8 +104,8 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div><h1 className="text-5xl text-center translate-y-10">How It Works</h1></div>
-          <div className="pt-40">
-            <div className="section flex flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto justify-between w-11/12">
+          <div>
+            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="section flex flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 justify-between w-11/12 mx-auto">
+            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="section flex flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 justify-between w-11/12 mx-auto">
+            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
@@ -167,13 +167,13 @@ const Home: NextPage = () => {
             </div>
           </div>
         </InfiniteSectionContainer>
-        <div className="translate-y-0 xl:translate-y-[150px]">
-          <svg className="xl:pt-[10vh]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <div className="translate-y-10">
+          <svg className="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
           </svg>
         </div>
-        <InfiniteSectionContainer className="bg-purple mb-[-400px] h-[3600px] md:h-[3200px] lg:h-[2500px] xl:h-[2000px]" id="how-it-works-2">
-          <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-10">
+        <InfiniteSectionContainer className="bg-purple translate-y-10 h-[370vh] md:h-[350vh] content-box mb-0 md:mb-[-10rem]" id="how-it-works-2">
+          <div className="flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20 justify-center">
             <div>
               <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Agencies</h2>
               <p className="max-w-xl py-6 text-center lg:text-left">
@@ -199,8 +199,8 @@ const Home: NextPage = () => {
             </div>
           </div>
           <h1 className="text-5xl text-center translate-y-10">How It Works</h1>
-          <div className="pt-40 translate-y-10">
-            <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+          <div>
+            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
               <div>
                 <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1B</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left">
@@ -220,7 +220,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
               <div>
                 <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 2B</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left">
@@ -240,7 +240,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
               <div>
                 <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 3B</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left">
@@ -262,7 +262,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </InfiniteSectionContainer>
-        <div className="pt-0 mt-[390px] md:mt-[360px]">
+        <div className="pt-0 translate-y-10 md:translate-y-40 lg:translate-y-36">
           <svg className="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
           </svg>
