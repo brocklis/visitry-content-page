@@ -17,7 +17,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Meta />
-      <Header defaultColor="#fff" scrollColor="#00A38B" defaultBGColor="rgba(0,0,0,0)" scrollBGColor="#fff" forwardedRef={ref} />
+      <Header defaultColor="#fff" scrollColor="#00A38B" defaultTextColor="white" scrollTextColor="#333" defaultBGColor="rgba(0,0,0,0)" scrollBGColor="#fff" forwardedRef={ref} />
       <div className="min-h-screen relative" style={{"top": `-${offsetTop}px`}}>
         <main>{children}</main>
       </div>
