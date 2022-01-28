@@ -8,6 +8,8 @@ import InfiniteSectionContainer from '../components/infiniteSectionContainer'
 import PopUpVideo from '../components/popupVideo'
 import styles from '../styles/Home.module.css'
 import FAQ from '../components/faq'
+import contactForm from '../components/contactForm'
+import ContactForm from '../components/contactForm'
 
 const clinicianFAQ = [
   {
@@ -293,8 +295,9 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="py-20">
-          <h2 className="font-merri text-5xl font-bold text-center mb-14">Contact Information</h2>
+        <div className="pt-20">
+          <h2 className="font-merri text-5xl font-bold text-center mb-14">Get in Touch</h2>
+          <ContactForm />
         </div>
       </Layout>
     </>
