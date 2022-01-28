@@ -78,7 +78,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </SectionContainer>
-        <InfiniteSectionContainer className="bg-purple h-[430vh] md:h-[350vh] xl:h-[370vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem]" id="how-it-works">
+        <InfiniteSectionContainer className="bg-purple h-[430vh] md:h-[350vh] lg:h-[360vh] xl:h-[370vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem]" id="how-it-works">
           <div className="absolute top-[-20vw] w-full">
             <svg className="w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
