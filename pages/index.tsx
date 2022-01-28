@@ -8,7 +8,6 @@ import InfiniteSectionContainer from '../components/infiniteSectionContainer'
 import PopUpVideo from '../components/popupVideo'
 import styles from '../styles/Home.module.css'
 import FAQ from '../components/faq'
-import contactForm from '../components/contactForm'
 import ContactForm from '../components/contactForm'
 
 const clinicianFAQ = [

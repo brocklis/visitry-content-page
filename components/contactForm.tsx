@@ -73,7 +73,7 @@ export default function ContactForm() {
     };
     return (
         <div className="overflow-hidden">
-            <div className="bg-white max-w-7xl mx-auto -mt-10 z-20 relative pt-14 shadow-standard w-11/12">
+            <div className="bg-white max-w-7xl mx-auto -mt-10 z-0 relative pt-14 shadow-standard w-11/12">
                 <div className="flex flex-col lg:flex-row max-w-7xl mx-auto items-center w-full lg:w-9/12">
                     <div className="w-full">
                         <div className="mt-10 sm:mt-0">
