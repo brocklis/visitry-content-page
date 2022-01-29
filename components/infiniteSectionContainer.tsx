@@ -18,7 +18,7 @@ function getTranslate(item: HTMLElement): number | number[] | undefined {
     return transArr
   }
 
-export default function InfiniteSectionContainer(props: {className?: string, id?: string, children: any}) {
+export default function InfiniteSectionContainer(props: {className?: string, id?: string, containerClassName?: string, heroClassName?: string, children: any}) {
     const ref = useRef(null)
     const heroRef = useRef(null)
     const headerRef = useRef(null)
@@ -70,20 +70,23 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
         return () => window.removeEventListener('scroll', handleScroll)
     });
     return (
-        <section className={`relative ${props.className || ""}`} id={props.id || ""} ref={ref}>
-            <div className="sticky-container w-full sticky top-0" id={props.id || ""}>
-                <div className="relative w-full">
-                    <div className="hero-parent absolute top-0 w-full h-screen flex items-center opacity-1" ref={heroRef}>
-                        {props.children[0]}
-                    </div>
-                    <div className="header-parent absolute top-0 w-full pt-10 md:pt-20 opacity-0 z-10" ref={headerRef}>
-                        {props.children[1]}
-                    </div>
-                    <div className="intro-parent absolute top-0 w-full opacity-0 pt-32 md:pt-0" ref={introRef}>
-                        {props.children[2]}
+        <>
+            <section className={`relative ${props.className || ""}`} id={props.id || ""} ref={ref}>
+                {props.children[0]}
+                <div className={`sticky-container w-full sticky top-0 ${props.containerClassName || ""}`} id={props.id || ""}>
+                    <div className="relative w-full">
+                        <div className={`hero-parent absolute top-0 w-full h-screen flex items-center opacity-1 ${props.heroClassName || ""}`} ref={heroRef}>
+                            {props.children[1]}
+                        </div>
+                        <div className="header-parent absolute top-0 w-full pt-10 md:pt-20 opacity-0 z-10" ref={headerRef}>
+                            {props.children[2]}
+                        </div>
+                        <div className="intro-parent absolute top-0 w-full opacity-0 pt-32 md:pt-0" ref={introRef}>
+                            {props.children[3]}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
