@@ -63,8 +63,8 @@ const Home: NextPage = () => {
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
                 <div className="flex justify-center lg:justify-start">
-                  <Button text="For Agencies" color="primary" className="px-14 mr-2" />
-                  <Button text="For Clinicians" color="" className="px-14" />
+                  <Button text="For Agencies" color="primary" className="px-14 mr-2" slug="#how-it-works" />
+                  <Button text="For Clinicians" color="" className="px-14" slug="#how-it-works-2" />
                 </div>
               </div>
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 w-full lg:w-1/2">
@@ -106,13 +106,13 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="text-white">
-              <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinician</h2>
+              <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Agencies</h2>
               <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
             </div>
           </div>
-          <div><h1 className="text-5xl text-white text-center translate-y-10 md:translate-y-15 lg:translate-y-32">How It Works</h1></div>
+          <div><h1 className="font-merri text-5xl text-white text-center translate-y-10 md:translate-y-15 lg:translate-y-32">How It Works</h1></div>
           <div>
             <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
@@ -184,8 +184,8 @@ const Home: NextPage = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20 justify-center">
             <div>
-              <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Agencies</h2>
-              <p className="max-w-xl py-6 text-center lg:text-left">
+              <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinicians</h2>
+              <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
             </div>
@@ -207,12 +207,12 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <h1 className="text-5xl text-center translate-y-10 md:translate-y-15 lg:translate-y-32">How It Works</h1>
+          <h1 className="font-merri text-5xl text-5xl text-center translate-y-10 md:translate-y-15 lg:translate-y-32">How It Works</h1>
           <div>
             <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
               <div>
-                <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 1B</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 1</h2>
+                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
@@ -231,8 +231,8 @@ const Home: NextPage = () => {
             </div>
             <div className="section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
               <div>
-                <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 2B</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 2</h2>
+                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
@@ -251,8 +251,8 @@ const Home: NextPage = () => {
             </div>
             <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
               <div>
-                <h2 className="text-3xl uppercase font-bold text-center lg:text-left">Title 3B</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 3</h2>
+                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
@@ -290,7 +290,7 @@ const Home: NextPage = () => {
               ))}
             </div>
             <div className="w-full lg:w-1/2">
-            <h3 className="font-merri text-3xl font-bold text-center mb-3">Agency</h3>
+              <h3 className="font-merri text-3xl font-bold text-center mb-3">Agency</h3>
               {agencyFAQ.map((item, idx) => (
                 <FAQ
                   key={idx}
