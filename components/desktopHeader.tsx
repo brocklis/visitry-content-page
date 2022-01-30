@@ -2,15 +2,15 @@ import { useEffect, useState } from 'react'
 import Button from './button'
 import Logo from './logo'
 export default function DesktopHeader(props) {
-    const [ color, setColor ] = useState(props.defaultColor)
-    const [ backgroundColor, setBackgroundColor ] = useState(props.defaultBGColor)
+    const [color, setColor] = useState(props.defaultColor)
+    const [backgroundColor, setBackgroundColor] = useState(props.defaultBGColor)
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
     })
 
     const handleScroll = () => {
-        if ( window.scrollY > 50 ) {
+        if (window.scrollY > 50) {
             setBackgroundColor(props.scrollBGColor)
             setColor(props.scrollColor)
         } else {
@@ -19,19 +19,24 @@ export default function DesktopHeader(props) {
         }
     }
     return (
-        <div style={{backgroundColor: backgroundColor}} className="fixed w-full text-xl font-bold flex py-4 top-0 z-10 max-w-7xl mx-auto">
-            <div className="px-8 flex">
-                <Logo fill={color} />
-            </div>
-            <div className="grow self-center flex justify-evenly">
-                <a href="#" style={{color}}>Button</a>
-                <a href="#" style={{color}}>Button</a>
-                <a href="#" style={{color}}>Button</a>
-                <a href="#" style={{color}}>Button</a>
-                <a href="#" style={{color}}>Button</a>
-            </div>
-            <div className="px-8 self-center">
-                <Button text="Call to action" color="primary" />
+        <div style={{ backgroundColor: backgroundColor }} className="fixed w-full text-xl font-bold py-4 top-0 z-10 max-w-7xl mx-auto">
+            <div className="flex">
+                <div>
+                    Agency Login | Clinician Login
+                </div>
+                <div className="px-8 flex">
+                    <a href="/"><Logo fill={color} /></a>
+                </div>
+                <div className="grow self-center flex justify-evenly">
+                    <a href="#" style={{ color }}>Button</a>
+                    <a href="#" style={{ color }}>Button</a>
+                    <a href="#" style={{ color }}>Button</a>
+                    <a href="#" style={{ color }}>Button</a>
+                    <a href="#" style={{ color }}>Button</a>
+                </div>
+                <div className="px-8 self-center">
+                    <Button text="Call to action" color="primary" />
+                </div>
             </div>
         </div>
     )
