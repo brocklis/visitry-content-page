@@ -25,7 +25,7 @@ export default function DesktopHeader(props) {
                     Agency Login | Clinician Login
                 </div>
                 <div className="px-8 flex">
-                    <a href="/"><Logo fill={color} /></a>
+                    <Logo fill={color} />
                 </div>
                 <div className="grow self-center flex justify-evenly">
                     <a href="#" style={{ color }}>Button</a>
