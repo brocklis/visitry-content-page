@@ -3,6 +3,8 @@ import Button from './button'
 import Logo from './logo'
 import Image from "next/image"
 import MobileDropdown from './mobileDropdown'
+import Link from "next/link"
+
 type Props = {
     defaultColor?: string
     defaultTextColor?: string
@@ -46,7 +48,7 @@ export default function Header(props: Props) {
             <div className="flex">
                 <div className="hidden lg:flex w-11/12 mx-auto justify-between" style={{ maxWidth: "80rem" }}>
                     <div className="flex">
-                        <a href="/"><Logo fill={color} /></a>
+                        <Link href="/"><Logo fill={color} /></Link>
                     </div>
                     <div className="grow self-center flex font-bold justify-evenly text-xl">
 
