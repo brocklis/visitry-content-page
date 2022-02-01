@@ -174,7 +174,7 @@ const Home: NextPage = () => {
               <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
             </svg>
           </div>
-          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-0 md:pt-32 lg:pt-0 justify-center w-11/12">
+          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-0 md:pt-32 lg:pt-0 justify-center w-11/12 overflow-x-hidden">
             <div>
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinicians</h2>
               <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
