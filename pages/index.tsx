@@ -199,7 +199,7 @@ const Home: NextPage = () => {
           </div>
           <h1 className="font-merri text-5xl text-5xl text-center translate-y-24 md:translate-y-15 lg:translate-y-32">How It Works</h1>
           <div className="translate-y-0 md:translate-y-0">
-            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
+            <div className="section flex justify-center h-screen flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 1</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left text-lg">
@@ -217,7 +217,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
+            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left text-lg">
@@ -235,7 +235,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
+            <div className="section flex justify-center h-screen flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 3</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left text-lg">
