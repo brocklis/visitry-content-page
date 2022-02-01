@@ -97,7 +97,6 @@ const Home: NextPage = () => {
               <div className="mx-auto absolute lg:left-1/2 lg:translate-x-[-20%]">
                 <Image
                   className="cursor-pointer"
-                  onClick={() => setShowModal(true)}
                   src="/images/phone.png"
                   width={212}
                   height={400}
@@ -119,7 +118,6 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     className="cursor-pointer"
-                    onClick={() => setShowModal(true)}
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -139,7 +137,6 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     className="cursor-pointer"
-                    onClick={() => setShowModal(true)}
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -159,7 +156,6 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     className="cursor-pointer"
-                    onClick={() => setShowModal(true)}
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -198,7 +194,6 @@ const Home: NextPage = () => {
               <div className="mx-auto absolute lg:right-1/2 lg:translate-x-[20%]">
                 <Image
                   className="cursor-pointer"
-                  onClick={() => setShowModal(true)}
                   src="/images/phone.png"
                   width={212}
                   height={400}
@@ -220,7 +215,6 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     className="cursor-pointer"
-                    onClick={() => setShowModal(true)}
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -240,7 +234,6 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     className="cursor-pointer"
-                    onClick={() => setShowModal(true)}
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -260,7 +253,6 @@ const Home: NextPage = () => {
                 <div>
                   <Image
                     className="cursor-pointer"
-                    onClick={() => setShowModal(true)}
                     src="/images/phone.png"
                     width={212}
                     height={400}
