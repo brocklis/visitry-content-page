@@ -66,14 +66,9 @@ export default function Header(props: Props) {
                 </div>
             </div>
             <div className="flex lg:hidden items-center justify-between max-w-7xl mx-auto w-11/12">
-                <Image
-                    src="/images/logo-white.svg"
-                    width={215}
-                    height={47}
-                    alt="Test"
-                />
+                <Link href="/"><Logo fill={color} /></Link>
                 <div className="flex justify-center">
-                    <MobileDropdown />
+                    <MobileDropdown color={textColor} />
                 </div>
             </div>
         </div>

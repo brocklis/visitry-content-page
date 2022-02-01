@@ -34,16 +34,21 @@ const solutions = [
     },
 ]
 
-export default function MobileDropdown() {
+type Props = {
+    className?: string
+    color?: string
+}
+export default function MobileDropdown(props: Props) {
     return (
-        <div className="w-full max-w-sm px-4 top-16">
+        <div className={`w-full max-w-sm px-4 top-16 ${props.className}`}>
             <Popover>
                 {({ open }) => (
                     <>
                         <Popover.Button className="block" style={{ width: '24px' }}>
                             <FontAwesomeIcon
                                 icon={faBars}
-                                className={`${open ? '' : ''} text-xl text-white group-hover:text-opacity-80 transition ease-in-out duration-150`}
+                                className={`${open ? '' : ''} text-xl group-hover:text-opacity-80 transition ease-in-out duration-150`}
+                                style={{'color': props.color}}
                                 aria-hidden="true"
                             />
                         </Popover.Button>
