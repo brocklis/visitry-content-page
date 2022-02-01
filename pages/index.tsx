@@ -96,7 +96,6 @@ const Home: NextPage = () => {
               </div>
               <div className="mx-auto absolute lg:left-1/2 lg:translate-x-[-20%]">
                 <Image
-                  className="cursor-pointer"
                   src="/images/phone.png"
                   width={212}
                   height={400}
@@ -117,7 +116,6 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
-                    className="cursor-pointer"
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -136,7 +134,6 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
-                    className="cursor-pointer"
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -155,7 +152,6 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
-                    className="cursor-pointer"
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -193,7 +189,6 @@ const Home: NextPage = () => {
               </div>
               <div className="mx-auto absolute lg:right-1/2 lg:translate-x-[20%]">
                 <Image
-                  className="cursor-pointer"
                   src="/images/phone.png"
                   width={212}
                   height={400}
@@ -214,7 +209,6 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
-                    className="cursor-pointer"
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -233,7 +227,6 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
-                    className="cursor-pointer"
                     src="/images/phone.png"
                     width={212}
                     height={400}
@@ -252,7 +245,6 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
-                    className="cursor-pointer"
                     src="/images/phone.png"
                     width={212}
                     height={400}
