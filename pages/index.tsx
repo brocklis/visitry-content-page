@@ -55,7 +55,7 @@ const Home: NextPage = () => {
       <PopUpVideo showModal={showModal} setShowModal={setShowModal} />
       <Layout>
         <div className="relative gradient-bg z-[1] md:mb-[-8vw] lg:mb-[-12vw]">
-          <SectionContainer className="relative text-white mt-20 pt-20 pb-[1vh] lg:pb-[1vh]">
+          <SectionContainer className="relative text-white mt-20 pt-20 pb-[8vh] lg:pb-[1vh]">
             <div className="pt-36 flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto py-20">
               <div className="w-full lg:w-1/2">
                 <h1 className="text-6xl font-merri font-bold text-center lg:text-left">Heading one</h1>
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
         </div>
         <InfiniteSectionContainer className="bg-purple h-[430vh] md:h-[350vh] lg:h-[360vh] xl:h-[370vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
           <div></div>
-          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
             <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
               <div className={`w-full translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -174,7 +174,7 @@ const Home: NextPage = () => {
               <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
             </svg>
           </div>
-          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20 justify-center">
+          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-20 justify-center w-11/12">
             <div>
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinicians</h2>
               <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
           </div>
           <h1 className="font-merri text-5xl text-5xl text-center translate-y-10 md:translate-y-15 lg:translate-y-32">How It Works</h1>
           <div>
-            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 1</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left text-lg">
@@ -217,7 +217,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 2</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left text-lg">
@@ -235,7 +235,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto">
+            <div className="section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left">Title 3</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left text-lg">
