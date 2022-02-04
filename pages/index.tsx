@@ -88,17 +88,18 @@ const Home: NextPage = () => {
         <InfiniteSectionContainer className="bg-purple h-[405vh] md:h-[370vh] lg:h-[360vh] xl:h-[370vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
           <div></div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-50vh">
               <div className={`w-full translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
                 </svg>
               </div>
-              <div className="mx-auto absolute lg:left-1/2 lg:translate-x-[-20%]">
+              <div className="mx-auto absolute lg:left-1/2 lg:translate-x-[-20%] h-full w-full flex justify-center">
                 <Image
+                  className={`${styles['how-it-works-image']}`}
                   src="/images/phone.png"
-                  width={212}
                   height={400}
+                  width={212}
                   alt="iPhone"
                 />
               </div>
@@ -116,9 +117,10 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
+                    className={`${styles['how-it-works-image']}`}
                     src="/images/phone.png"
-                    width={212}
                     height={400}
+                    width={212}
                     alt="iPhone"
                   />
                 </div>
@@ -134,9 +136,10 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
+                    className={`${styles['how-it-works-image']}`}
                     src="/images/phone.png"
-                    width={212}
                     height={400}
+                    width={212}
                     alt="iPhone"
                   />
                 </div>
@@ -152,9 +155,10 @@ const Home: NextPage = () => {
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
                 <div>
                   <Image
+                    className={`${styles['how-it-works-image']}`}
                     src="/images/phone.png"
-                    width={212}
                     height={400}
+                    width={212}
                     alt="iPhone"
                   />
                 </div>

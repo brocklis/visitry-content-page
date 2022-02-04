@@ -124,6 +124,15 @@
     animation-fill-mode: forwards;
 }
 
+.how-it-works-image {
+  min-height: unset !important;
+  min-width: unset !important;
+  max-height: 30vh !important;
+  max-width: unset !important;
+  width: auto !important;
+  height: auto !important;
+}
+
 @keyframes move {
     100% {
         stroke-dashoffset: 0;
