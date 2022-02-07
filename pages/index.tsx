@@ -88,7 +88,7 @@ const Home: NextPage = () => {
         <InfiniteSectionContainer className="bg-purple h-[405vh] md:h-[370vh] lg:h-[360vh] xl:h-[370vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
           <div></div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-50vh">
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
               <div className={`w-full translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
@@ -97,9 +97,9 @@ const Home: NextPage = () => {
               <div className="mx-auto absolute lg:left-1/2 lg:translate-x-[-20%] h-full w-full flex justify-center">
                 <Image
                   className={`${styles['how-it-works-image']}`}
-                  src="/images/phone.png"
-                  height={400}
-                  width={212}
+                  src="/images/agency-screenshot1.png"
+                  width={199}
+                  height={240}
                   alt="iPhone"
                 />
               </div>
@@ -114,13 +114,13 @@ const Home: NextPage = () => {
           <div><h1 className="font-merri text-5xl text-white text-center translate-y-24 md:translate-y-15 lg:translate-y-32">How It Works</h1></div>
           <div>
             <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
                 <div>
                   <Image
                     className={`${styles['how-it-works-image']}`}
-                    src="/images/phone.png"
-                    height={400}
-                    width={212}
+                    src="/images/agency-screenshot1.png"
+                    width={199}
+                    height={240}
                     alt="iPhone"
                   />
                 </div>
@@ -133,13 +133,13 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="text-white section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
                 <div>
                   <Image
                     className={`${styles['how-it-works-image']}`}
-                    src="/images/phone.png"
-                    height={400}
-                    width={212}
+                    src="/images/agency-screenshot2.png"
+                    width={199}
+                    height={240}
                     alt="iPhone"
                   />
                 </div>
@@ -152,13 +152,13 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
                 <div>
                   <Image
                     className={`${styles['how-it-works-image']}`}
-                    src="/images/phone.png"
-                    height={400}
+                    src="/images/agency-screenshot3.png"
                     width={212}
+                    height={400}
                     alt="iPhone"
                   />
                 </div>
@@ -185,7 +185,7 @@ const Home: NextPage = () => {
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
             </div>
-            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
               <div className={`w-full translate-x-[10%] lg:translate-x-0 ${styles['heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" style={{ transform: "scaleX(-1)" }} viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
@@ -193,7 +193,8 @@ const Home: NextPage = () => {
               </div>
               <div className="mx-auto absolute lg:right-1/2 lg:translate-x-[20%]">
                 <Image
-                  src="/images/phone.png"
+                  className={`${styles['how-it-works-2-image']}`}
+                  src="/images/clinician-screenshot1.png"
                   width={212}
                   height={400}
                   alt="iPhone"
@@ -210,10 +211,11 @@ const Home: NextPage = () => {
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
                 <div>
                   <Image
-                    src="/images/phone.png"
+                    className={`${styles['how-it-works-2-image']}`}
+                    src="/images/clinician-screenshot1.png"
                     width={212}
                     height={400}
                     alt="iPhone"
@@ -228,10 +230,11 @@ const Home: NextPage = () => {
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
                 <div>
                   <Image
-                    src="/images/phone.png"
+                    className={`${styles['how-it-works-2-image']}`}
+                    src="/images/clinician-screenshot2.png"
                     width={212}
                     height={400}
                     alt="iPhone"
@@ -246,10 +249,11 @@ const Home: NextPage = () => {
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
                 <div>
                   <Image
-                    src="/images/phone.png"
+                    className={`${styles['how-it-works-2-image']}`}
+                    src="/images/clinician-screenshot3.png"
                     width={212}
                     height={400}
                     alt="iPhone"

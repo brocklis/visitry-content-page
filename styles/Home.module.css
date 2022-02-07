@@ -110,6 +110,7 @@
 
 .heart-svg-container {
   margin: 0 auto;
+  height: auto !important;
 }
 
 .heart {
@@ -129,8 +130,17 @@
   min-width: unset !important;
   max-height: 30vh !important;
   max-width: unset !important;
-  width: auto !important;
+  width: 100% !important;
   height: auto !important;
+}
+
+.how-it-works-2-image {
+  min-height: unset !important;
+  min-width: unset !important;
+  max-height: 30vh !important;
+  max-width: unset !important;
+  width: auto !important;
+  height: 100% !important;
 }
 
 @keyframes move {
