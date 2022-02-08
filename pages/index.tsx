@@ -63,8 +63,8 @@ const Home: NextPage = () => {
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
                 <div className="flex justify-center lg:justify-start">
-                  <Button text="For Agencies" color="primary" className="px-14 mr-2" slug="#how-it-works" />
-                  <Button text="For Clinicians" color="" className="px-14" slug="#how-it-works-2" />
+                  <Button text="For Agencies" color="primary" className="px-2 lg:px-14 mr-2" slug="#how-it-works" />
+                  <Button text="For Clinicians" color="" className="px-2 lg:px-14" slug="#how-it-works-2" />
                 </div>
               </div>
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 w-full lg:w-1/2">
@@ -85,28 +85,28 @@ const Home: NextPage = () => {
             </svg>
           </div>
         </div>
-        <InfiniteSectionContainer className="bg-purple h-[405vh] md:h-[370vh] lg:h-[360vh] xl:h-[370vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
+        <InfiniteSectionContainer className="bg-purple h-[335vh] md:h-[300vh] lg:h-[290vh] xl:h-[300vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
           <div></div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
+            <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-100px]">
               <div className={`w-full translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
                 </svg>
               </div>
-              <div className="mx-auto absolute lg:left-1/2 lg:translate-x-[-20%] h-full w-full flex justify-center">
+              <div className={`mx-auto absolute lg:left-[20%] lg:top-1/10 h-full w-4/5 flex justify-center ${styles['how-it-works-image-parent']}`}>
                 <Image
                   className={`${styles['how-it-works-image']}`}
                   src="/images/agency-screenshot1.png"
-                  width={199}
-                  height={240}
-                  alt="iPhone"
+                  width={500}
+                  height={415}
+                  alt="computer"
                 />
               </div>
             </div>
-            <div className="text-white">
+            <div className="text-white translate-y-[50px] lg:translate-y-0">
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Agencies</h2>
-              <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
+              <p className="max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
             </div>
@@ -114,84 +114,65 @@ const Home: NextPage = () => {
           <div><h1 className="font-merri text-5xl text-white text-center translate-y-24 md:translate-y-15 lg:translate-y-32">How It Works</h1></div>
           <div>
             <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
-                <div>
-                  <Image
-                    className={`${styles['how-it-works-image']}`}
-                    src="/images/agency-screenshot1.png"
-                    width={199}
-                    height={240}
-                    alt="iPhone"
-                  />
-                </div>
-              </div>
-              <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 1</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-                </p>
-              </div>
-            </div>
-            <div className="text-white section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
-                <div>
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-100px]">
+                <div className={`${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
                     src="/images/agency-screenshot2.png"
-                    width={199}
-                    height={240}
-                    alt="iPhone"
+                    width={500}
+                    height={415}
+                    alt="computer"
                   />
                 </div>
               </div>
-              <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
-                <p className="max-w-xl text-lg py-6 text-center lg:text-left">
+              <div className="translate-y-[50px] lg:translate-y-0">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 1</h2>
+                <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
             </div>
-            <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
-                <div>
+            <div className="text-white section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-4xl space-x-0 lg:space-x-10 w-11/12 mx-auto translate-y-[10vh]">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-100px]">
+                <div className={`${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
                     src="/images/agency-screenshot3.png"
-                    width={212}
-                    height={400}
-                    alt="iPhone"
+                    width={500}
+                    height={415}
+                    alt="computer"
                   />
                 </div>
               </div>
-              <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 3</h2>
-                <p className="max-w-xl text-lg py-6 text-center lg:text-left">
+              <div className="translate-y-[50px] lg:translate-y-0">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
+                <p className="max-w-xl text-sm lg:text-lg py-6 text-center lg:text-left">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
             </div>
           </div>
         </InfiniteSectionContainer>
-        <InfiniteSectionContainer className="text-white gradient-bg h-[380vh] md:h-[360vh] lg:h-[350vh] content-box mb-0" id="how-it-works-2">
+        <InfiniteSectionContainer className="text-white gradient-bg h-[310vh] md:h-[290vh] lg:h-[280vh] content-box mb-0" id="how-it-works-2" heroClassName={`${styles['hero-parent']}`}>
           <div className="w-full md:absolute top-0">
             <svg className="w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
             </svg>
           </div>
-          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-0 md:pt-32 lg:pt-0 justify-center w-11/12 overflow-x-hidden">
+          <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-0 md:pt-32 lg:pt-0 justify-center w-11/12 h-screen overflow-x-hidden overflow-y-hidden">
             <div>
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinicians</h2>
-              <p className="max-w-xl py-6 text-lg leading-relaxed text-center lg:text-left">
+              <p className="max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
               </p>
             </div>
-            <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
+            <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-10vh] lg:translate-y-[-50px]">
               <div className={`w-full translate-x-[10%] lg:translate-x-0 ${styles['heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" style={{ transform: "scaleX(-1)" }} viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
                 </svg>
               </div>
-              <div className="mx-auto absolute lg:right-1/2 lg:translate-x-[20%]">
+              <div className={`mx-auto absolute lg:right-1/2 lg:translate-x-[20%] ${styles['how-it-works-image-parent']}`}>
                 <Image
                   className={`${styles['how-it-works-2-image']}`}
                   src="/images/clinician-screenshot1.png"
@@ -207,31 +188,12 @@ const Home: NextPage = () => {
             <div className="section flex justify-center h-screen flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 1</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
+                <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
-                <div>
-                  <Image
-                    className={`${styles['how-it-works-2-image']}`}
-                    src="/images/clinician-screenshot1.png"
-                    width={212}
-                    height={400}
-                    alt="iPhone"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-              <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
-                </p>
-              </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
-                <div>
+              <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
+                <div className={`${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-2-image']}`}
                     src="/images/clinician-screenshot2.png"
@@ -242,15 +204,15 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex justify-center h-screen flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
+            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 3</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-lg">
+                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
+                <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
                 </p>
               </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh]">
-                <div>
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
+                <div className={`${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-2-image']}`}
                     src="/images/clinician-screenshot3.png"

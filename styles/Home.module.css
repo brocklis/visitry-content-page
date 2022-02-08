@@ -125,10 +125,15 @@
     animation-fill-mode: forwards;
 }
 
+.how-it-works-image-parent span {
+  width: 100% !important;
+  height: 450px !important;
+}
+
 .how-it-works-image {
   min-height: unset !important;
   min-width: unset !important;
-  max-height: 30vh !important;
+  max-height: unset !important;
   max-width: unset !important;
   width: 100% !important;
   height: auto !important;
@@ -138,7 +143,7 @@
   min-height: unset !important;
   min-width: unset !important;
   max-height: 30vh !important;
-  max-width: unset !important;
+  max-width: 100% !important;
   width: auto !important;
   height: 100% !important;
 }
@@ -198,4 +203,10 @@
     width: 100%;
     flex-direction: column;
   }
+  .how-it-works-image {
+    height: 83vw;
+  }
+}
+
+@media (max-height: 700px) {
 }
