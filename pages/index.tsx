@@ -88,7 +88,7 @@ const Home: NextPage = () => {
         <InfiniteSectionContainer className="bg-purple h-[335vh] md:h-[300vh] lg:h-[290vh] xl:h-[300vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
           <div></div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-            <div className="flex justify-center shadow-standard relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[70%]">
+            <div className="flex justify-center shadow-standard relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[60%]">
               <div className={`w-full absolute translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']} ${styles['how-it-works-heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
                 />
               </div>
             </div>
-            <div className="text-white translate-y-[50px] lg:translate-y-0 lg:w-[30%]">
+            <div className="text-white translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Agencies</h2>
               <p className="max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
                 I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
           <div><h1 className="font-merri text-5xl text-white text-center translate-y-24 md:translate-y-15 lg:translate-y-32">How It Works</h1></div>
           <div>
             <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[70%]">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[60%]">
                 <div className={`w-full ${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="translate-y-[50px] lg:translate-y-0 lg:w-[30%]">
+              <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 1</h2>
                 <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="text-white section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 w-11/12 mx-auto translate-y-[10vh]">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[70%]">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[60%]">
                 <div className={`w-full ${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
@@ -144,7 +144,7 @@ const Home: NextPage = () => {
                   />
                 </div>
               </div>
-              <div className="translate-y-[50px] lg:translate-y-0 lg:w-[30%]">
+              <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
                 <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
                 <p className="max-w-xl text-sm lg:text-lg py-6 text-center lg:text-left">
                   I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
