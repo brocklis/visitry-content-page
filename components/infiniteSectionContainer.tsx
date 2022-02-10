@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-function getTranslate(item: HTMLElement): number | number[] | undefined {
+export function getTranslate(item: HTMLElement): number | number[] | undefined {
     const transArr = []
     if (!window.getComputedStyle) {
       return

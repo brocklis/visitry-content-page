@@ -113,6 +113,12 @@
   height: auto !important;
 }
 
+.how-it-works-heart-svg-container {
+}
+
+.how-it-works-2-heart-svg-container {
+}
+
 .heart {
     fill: none;
     stroke: #DFE169;

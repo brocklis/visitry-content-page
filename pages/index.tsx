@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Button from '../components/button'
 import SectionContainer from '../components/sectionContainer'
 import InfiniteSectionContainer from '../components/infiniteSectionContainer'
+import InView from '../components/inView'
 import PopUpVideo from '../components/popupVideo'
 import styles from '../styles/Home.module.css'
 import FAQ from '../components/faq'
@@ -89,11 +90,11 @@ const Home: NextPage = () => {
           <div></div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
             <div className="flex justify-center shadow-standard relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-[50px] lg:w-[60%]">
-              <div className={`w-full absolute translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']} ${styles['how-it-works-heart-svg-container']}`}>
+              <InView className={`w-full absolute translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']} ${styles['how-it-works-heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
                 </svg>
-              </div>
+              </InView>
               <div className={`mx-auto w-full flex justify-center ${styles['how-it-works-image-parent']}`}>
                 <Image
                   className={`${styles['how-it-works-image']}`}
@@ -167,11 +168,11 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-10vh] lg:translate-y-[-50px]">
-              <div className={`w-full translate-x-[10%] lg:translate-x-0 ${styles['heart-svg-container']} ${styles['how-it-works-2-heart-svg-container']}`}>
+              <InView className={`w-full translate-x-[10%] lg:translate-x-0 ${styles['heart-svg-container']} ${styles['how-it-works-2-heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" style={{ transform: "scaleX(-1)" }} viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
                 </svg>
-              </div>
+              </InView>
               <div className={`mx-auto absolute lg:right-1/2 lg:translate-x-[20%] ${styles['how-it-works-image-parent']}`}>
                 <Image
                   className={`${styles['how-it-works-2-image']}`}
