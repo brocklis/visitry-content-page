@@ -128,6 +128,7 @@
 .how-it-works-image-parent span {
   width: 100% !important;
   height: 450px !important;
+  overflow: visible !important;
 }
 
 .how-it-works-image {
@@ -142,7 +143,7 @@
 .how-it-works-2-image {
   min-height: unset !important;
   min-width: unset !important;
-  max-height: 30vh !important;
+  max-height: 35vh !important;
   max-width: 100% !important;
   width: auto !important;
   height: 100% !important;
@@ -209,4 +210,12 @@
 }
 
 @media (max-height: 700px) {
+}
+
+@media (min-width: 1024px) {
+  .how-it-works-2-image {
+    max-width: unset !important;
+    max-height: unset !important;
+    height: 150% !important;
+  }
 }
