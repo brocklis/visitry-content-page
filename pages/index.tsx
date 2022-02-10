@@ -85,10 +85,10 @@ const Home: NextPage = () => {
             </svg>
           </div>
         </div>
-        <InfiniteSectionContainer className="bg-purple h-[335vh] md:h-[300vh] lg:h-[290vh] xl:h-[300vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
+        <InfiniteSectionContainer className="bg-purple h-[335vh] md:h-[300vh] box-content mb-[-10rem] lg:mb-[-20rem] xl:mb-[-23rem] pt-10 md:pt-0" id="how-it-works">
           <div></div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-            <div className="flex justify-center shadow-standard relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[60%]">
+            <div className="flex justify-center shadow-standard relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-[50px] lg:w-[60%]">
               <div className={`w-full absolute translate-x-[-10%] lg:translate-x-0 ${styles['heart-svg-container']} ${styles['how-it-works-heart-svg-container']}`}>
                 <svg className="w-full" width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path className={styles.heart} d="M6.7998 73.2C6.7998 73.2 60.6998 269.6 182.9 252.5C305.1 235.4 330 153.7 443 153.2C556 152.7 443 299.8 443 299.8C443 299.8 322.1 454.9 301.1 441.7C280.1 428.6 88.1998 209.1 113.2 177.6C138.2 146.1 225.2 128.1 322.1 228.8" stroke="#DFE169" strokeWidth="8" strokeMiterlimit="10" />
