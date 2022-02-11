@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-function getTranslate(item: HTMLElement): number | number[] | undefined {
+export function getTranslate(item: HTMLElement): number | number[] | undefined {
     const transArr = []
     if (!window.getComputedStyle) {
       return
@@ -38,22 +38,11 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
             heroRef.current.style.opacity = 1 - opacity
             headerRef.current.style.opacity = opacity
             introRef.current.style.opacity = opacity
-            const subChild2Opacity = Math.min(1, 3 * ( ( yTranslation - minScrollAmount - introRef.current.childNodes[0].children[0].offsetHeight ) / introRef.current.childNodes[0].children[1].offsetHeight ) )
             let subChild1Opacity = Math.min(1, 3 * ( ( yTranslation - minScrollAmount ) / introRef.current.childNodes[0].children[0].offsetHeight ))
-            let subChild0Opacity = 1 - ( subChild1Opacity + subChild2Opacity )
-            if ( subChild0Opacity < 1 ) {
-                subChild1Opacity = 1 - subChild2Opacity
-            }
-            if ( subChild1Opacity > 0 ) {
-                subChild0Opacity = 0;
-            }
-            if ( subChild2Opacity > 0 ) {
-                subChild1Opacity = 0;
-            }
+            let subChild0Opacity = 1 - subChild1Opacity
             headerRef.current.style.opacity = 1 - Math.min(1, ( yTranslation / ( introRef.current.childNodes[0].children[0].offsetHeight + introRef.current.childNodes[0].children[1].offsetHeight ) ))
             introRef.current.childNodes[0].children[0].style.opacity = Math.min(1, subChild0Opacity * 3)
             introRef.current.childNodes[0].children[1].style.opacity = Math.min(1, subChild1Opacity * 3)
-            introRef.current.childNodes[0].children[2].style.opacity = Math.min(1, subChild2Opacity * 3)
         } else {
             heroRef.current.style.opacity = 1
             headerRef.current.style.opacity = 0
