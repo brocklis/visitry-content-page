@@ -38,11 +38,17 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
             heroRef.current.style.opacity = 1 - opacity
             headerRef.current.style.opacity = opacity
             introRef.current.style.opacity = opacity
-            let subChild1Opacity = Math.min(1, 3 * ( ( yTranslation - minScrollAmount ) / introRef.current.childNodes[0].children[0].offsetHeight ))
-            let subChild0Opacity = 1 - subChild1Opacity
-            headerRef.current.style.opacity = 1 - Math.min(1, ( yTranslation / ( introRef.current.childNodes[0].children[0].offsetHeight + introRef.current.childNodes[0].children[1].offsetHeight ) ))
+            const subChild1Opacity = Math.min(1, 3 * ( ( yTranslation - minScrollAmount ) / introRef.current.childNodes[0].children[0].offsetHeight ))
+            const subChild0Opacity = 1 - subChild1Opacity
             introRef.current.childNodes[0].children[0].style.opacity = Math.min(1, subChild0Opacity * 3)
             introRef.current.childNodes[0].children[1].style.opacity = Math.min(1, subChild1Opacity * 3)
+            if ( yTranslation > introRef.current.childNodes[0].children[0].offsetHeight ) {
+                const subChild2Opacity = Math.min(1, ( yTranslation - introRef.current.childNodes[0].children[0].offsetHeight ) / introRef.current.childNodes[0].children[1].offsetHeight)
+                const newSubChild1Opacity = Math.min(1, (1 - subChild2Opacity) / 3)
+                headerRef.current.style.opacity = newSubChild1Opacity
+                introRef.current.childNodes[0].children[1].style.opacity = newSubChild1Opacity
+                introRef.current.childNodes[0].children[2].style.opacity = Math.min(1, subChild2Opacity * 3)
+            }
         } else {
             heroRef.current.style.opacity = 1
             headerRef.current.style.opacity = 0
