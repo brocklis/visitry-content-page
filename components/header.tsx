@@ -55,11 +55,10 @@ export default function Header(props: Props) {
                     </div>
                     <div className="flex items-center space-x-10">
                         <ul className="flex space-x-5 text-lg open font-bold" style={{ color: textColor }}>
-                            <li>Agencies</li>
-                            <li>Clinicians</li>
-                            <li>FAQ</li>
-                            <li>Contact</li>
-                            <li>Login</li>
+                            <li><a href="/#how-it-works">Agencies</a></li>
+                            <li><a href="/#how-it-works2">Clinicians</a></li>
+                            <li><a href="/#faq">FAQ</a></li>
+                            <li><a href="/#contact">Contact</a></li>
                         </ul>
                         <Button text="Schedule a Demo" color="primary" styling="px-10" />
                     </div>
