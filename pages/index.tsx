@@ -13,39 +13,55 @@ import ContactForm from '../components/contactForm'
 
 const clinicianFAQ = [
   {
-    question: "Test",
-    answer: "Test",
+    question: "How do I get paid?",
+    answer: "Completed visits will be paid out bi-weekly via ACH direct deposit",
   },
   {
-    question: "Test",
-    answer: "Test",
+    question: "Why are visits gray instead of green?",
+    answer: `This means you aren’t yet enrolled with that agency. This may occur if they have yet to
+    provide credentials for their EMR. You can click “Enroll” in the visit card to ensure that
+    the process keeps moving properly`
   },
   {
-    question: "Test",
-    answer: "Test",
+    question: "Why don’t I see any visits on the map?",
+    answer: `Although we are continuously adding new referral sources, there still may be times
+    when all of visits have been taken already. Make sure to turn notifications on if you
+    want to know immediately when a new visit is added`,
   },
   {
-    question: "Test",
-    answer: "Test",
+    question: "Why aren’t I receiving notifications?",
+    answer: `Check to see if notifications are turned on both in the Visitry app and on your device. In
+    the app, go to the Account tab at the bottom right, tap “Settings” at the top, toggle push
+    notifications on and tap “Update Changes”`,
   },
 ]
 
 const agencyFAQ = [
   {
-    question: "Test",
-    answer: "Test",
+    question: "I accidentally posted a visit with the wrong information. What do I do?",
+    answer: `No problem, just click the “Edit” button next to the visit you would like to change, edit
+    your information, then click “Save”. These changes will be automatically reflected in the
+    clinician app`,
   },
   {
-    question: "Test",
-    answer: "Test",
+    question: "Can I cancel a posted visit?",
+    answer: `Yes, sometimes there are reasons why you need to cancel a visit you have posted.
+    Maybe you found another staffing source or it has been on the app for too long without
+    results. No worries, just click the “Cancel” button next to the visit you would like to
+    cancel. It will now be removed from both the web portal and the clinician app`,
   },
   {
-    question: "Test",
-    answer: "Test",
+    question: "Where can I see who has accepted a visit?",
+    answer: `You can find out who accepted your visit in the “Accepted” tab of the Visits section. You
+    can also opt to receive an email notification which will include the name of the clinician
+    who accepted the visit`,
   },
   {
-    question: "Test",
-    answer: "Test",
+    question: "Why aren’t my visits getting accepted?",
+    answer: `While we are continuously adding new clinicians, there may be times when our
+    clinicians have full schedules and are unable to accept additional visits. Another reason
+    may be that the visit is in an area that is difficult to staff. Either way, you can reach out
+    to Visitry Support to see if we can assist with more difficult to staff visits`
   },
 ]
 
@@ -58,26 +74,20 @@ const Home: NextPage = () => {
         <div className="relative gradient-bg z-[1] md:mb-[-8vw] lg:mb-[-12vw]">
           <SectionContainer className="relative text-white mt-20 pt-32 lg:pt-40 pb-[6rem] lg:pb-[1vh]">
             <div className="pt-36 flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto py-20">
-              <div className="w-full lg:w-1/2">
-                <h1 className="text-6xl font-merri font-bold text-center lg:text-left">Heading one</h1>
-                <p className="font-open max-w-3xl lg:max-w-7xl mx-auto lg:mx-0 text-lg py-6 text-center lg:text-left leading-relaxed">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              <div className="w-full">
+                <h1 className="text-center text-5xl lg:text-6xl font-merri font-bold text-center leading-relaxed">Home Health<br/>Staffing <i className="text-purple">Reimagined</i></h1>
+                <p className="font-open max-w-3xl mx-auto text-lg py-6 text-center leading-relaxed mb-10 ">
+                Finding additional staff has never been easier. Visitry provides real-time access to reliable and
+                qualified clinicians to help support the demand for your referrals.<br/><br/>
+                For clinicians, Visitry empowers you with the ability to fill your schedule with ease. 
+                Stop wondering where clients are hiding and start having calmer, more organized days.
                 </p>
-                <div className="flex justify-center lg:justify-start">
-                  <Button text="For Agencies" color="primary" className="px-2 lg:px-14 mr-2" slug="#how-it-works" />
-                  <Button text="For Clinicians" color="" className="px-2 lg:px-14" slug="#how-it-works-2" />
+                <div className="flex justify-center mt-10 flex-col lg:flex-row">
+                  <Button text="For Agencies" color="primary" className="px-14 flex mx-auto lg:mr-2" slug="#how-it-works" />
+                  <Button text="For Clinicians" color="" className="px-14 flex mx-auto mt-7 lg:mt-0 lg:ml-6" slug="#how-it-works-2" />
                 </div>
               </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 w-full lg:w-1/2">
-                <Image
-                  className="cursor-pointer rounded-2xl"
-                  onClick={() => setShowModal(true)}
-                  src="/images/homepage-video-ss.jpg"
-                  width={677}
-                  height={400}
-                  alt="Video Screenshot with Play Button"
-                />
-              </div>
+
             </div>
           </SectionContainer>
           <div className="w-full h-[15vw] overflow-y-clip">
@@ -98,7 +108,7 @@ const Home: NextPage = () => {
               <div className={`mx-auto w-full flex justify-center ${styles['how-it-works-image-parent']}`}>
                 <Image
                   className={`${styles['how-it-works-image']}`}
-                  src="/images/agency-screenshot1.png"
+                  src="/images/desktop-login.png"
                   width={500}
                   height={415}
                   alt="computer"
@@ -107,8 +117,9 @@ const Home: NextPage = () => {
             </div>
             <div className="text-white translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Agencies</h2>
-              <p className="max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
-                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              <p className="font-open max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
+              Qualified and skilled clinicians are just a click away. Whether your staff is
+              on vacation, out sick, or you just can’t keep up with the demand for referrals, we’ve got you covered!
               </p>
             </div>
           </div>
@@ -127,9 +138,9 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 1</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+                <p className="font-open max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
+                Simply input the visit type, target date, and address, then watch as the visit gets accepted 
+                almost instantly by one of our reliable clinicians.
                 </p>
               </div>
             </div>
@@ -146,9 +157,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
-                <p className="max-w-xl text-sm lg:text-lg py-6 text-center lg:text-left">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+                <p className="font-open max-w-xl text-sm lg:text-lg py-6 text-center lg:text-left">
+                After the visit has been accepted, simply plot the appropriate clinician in your EMR and that’s it!
                 </p>
               </div>
             </div>
@@ -163,8 +173,8 @@ const Home: NextPage = () => {
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-0 md:pt-32 lg:pt-0 justify-center w-11/12 h-screen overflow-x-hidden overflow-y-hidden">
             <div>
               <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinicians</h2>
-              <p className="max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
-                I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              <p className="font-open max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
+              Download and register on the app using your preferred iPhone or Android device.
               </p>
             </div>
             <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-10vh] lg:translate-y-[-50px]">
@@ -176,7 +186,7 @@ const Home: NextPage = () => {
               <div className={`mx-auto absolute lg:right-1/2 lg:translate-x-[20%] ${styles['how-it-works-image-parent']}`}>
                 <Image
                   className={`${styles['how-it-works-2-image']}`}
-                  src="/images/clinician-screenshot1.png"
+                  src="/images/mobile-mockup.png"
                   width={212}
                   height={400}
                   alt="iPhone"
@@ -188,9 +198,8 @@ const Home: NextPage = () => {
           <div className="translate-y-0 md:translate-y-0">
             <div className="section flex justify-center h-screen flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 1</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+                <p className="font-open max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
+                After going through a simple onboarding and vetting process, you will have access to visits in your area.
                 </p>
               </div>
               <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
@@ -207,9 +216,8 @@ const Home: NextPage = () => {
             </div>
             <div className="section flex justify-center h-[50vh] flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
               <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 2</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+                <p className="font-open max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
+                Click on a visit to see details. Then either click “Accept” if you want it or just ignore it if you don’t.
                 </p>
               </div>
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
@@ -231,7 +239,7 @@ const Home: NextPage = () => {
             <path fill="#fff" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
           </svg>
         </div>
-        <div className="max-w-7xl mx-auto w-11/12 py-20">
+        <div id="faq" className="max-w-7xl mx-auto w-11/12 py-20">
           <h2 className="font-merri text-5xl font-bold text-center mb-14">FAQ</h2>
           <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0">
             <div className="w-full lg:w-1/2">
@@ -257,7 +265,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="pt-20">
+        <div id="contact" className="pt-20">
           <h2 className="font-merri text-5xl font-bold text-center mb-14">Get in Touch</h2>
           <ContactForm />
         </div>
