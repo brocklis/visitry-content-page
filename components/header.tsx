@@ -56,7 +56,7 @@ export default function Header(props: Props) {
                     <div className="flex items-center space-x-10">
                         <ul className="flex space-x-5 text-lg open font-bold" style={{ color: textColor }}>
                             <li><a href="/#how-it-works">Agencies</a></li>
-                            <li><a href="/#how-it-works2">Clinicians</a></li>
+                            <li><a href="/#how-it-works-2">Clinicians</a></li>
                             <li><a href="/#faq">FAQ</a></li>
                             <li><a href="/#contact">Contact</a></li>
                         </ul>

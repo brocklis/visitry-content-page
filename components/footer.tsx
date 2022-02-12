@@ -11,8 +11,8 @@ export default function Footer() {
             alt="Test"
           />
           <p className="max-w-lg mt-6 text-white">
-            I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix
-            unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache
+            For clinicians, Visitry empowers you with the ability to fill your schedule with ease. Stop wondering
+            where clients are hiding and start having calmer, more organized days.
           </p>
         </div>
       </div>
@@ -21,34 +21,40 @@ export default function Footer() {
           Copyright Notice
         </p>
         <div className="flex items-center gap-x-3">
-          <Image
-            className="rounded-2xl"
-            src="/images/facebook.svg"
-            width={40}
-            height={40}
-            alt="Test"
-          />
-          <Image
+          <a href="">
+            <Image
+              className="rounded-2xl"
+              src="/images/facebook.svg"
+              width={40}
+              height={40}
+              alt="Test"
+            />
+          </a>
+          {/* <Image
             className="rounded-2xl"
             src="/images/instagram.svg"
             width={40}
             height={40}
             alt="Test"
-          />
-          <Image
-            className="rounded-2xl"
-            src="/images/twitter.svg"
-            width={40}
-            height={40}
-            alt="Test"
-          />
-          <Image
-            className="rounded-2xl"
-            src="/images/linkedin.svg"
-            width={40}
-            height={40}
-            alt="Test"
-          />
+          /> */}
+          <a href="">
+            <Image
+              className="rounded-2xl"
+              src="/images/twitter.svg"
+              width={40}
+              height={40}
+              alt="Test"
+            />
+          </a>
+          <a href="">
+            <Image
+              className="rounded-2xl"
+              src="/images/linkedin.svg"
+              width={40}
+              height={40}
+              alt="Test"
+            />
+          </a>
         </div>
       </div>
     </footer>

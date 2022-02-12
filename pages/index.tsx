@@ -75,12 +75,12 @@ const Home: NextPage = () => {
           <SectionContainer className="relative text-white mt-20 pt-32 lg:pt-40 pb-[6rem] lg:pb-[1vh]">
             <div className="pt-36 flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto py-20">
               <div className="w-full">
-                <h1 className="text-center text-5xl lg:text-6xl font-merri font-bold text-center leading-relaxed">Home Health<br/>Staffing <i className="text-purple">Reimagined</i></h1>
+                <h1 className="text-center text-5xl lg:text-6xl font-merri font-bold text-center leading-relaxed">Home Health<br />Staffing <i className="text-purple">Reimagined</i></h1>
                 <p className="font-open max-w-3xl mx-auto text-lg py-6 text-center leading-relaxed mb-10 ">
-                Finding additional staff has never been easier. Visitry provides real-time access to reliable and
-                qualified clinicians to help support the demand for your referrals.<br/><br/>
-                For clinicians, Visitry empowers you with the ability to fill your schedule with ease. 
-                Stop wondering where clients are hiding and start having calmer, more organized days.
+                  Finding additional staff has never been easier. Visitry provides real-time access to reliable and
+                  qualified clinicians to help support the demand for your referrals.<br /><br />
+                  For clinicians, Visitry empowers you with the ability to fill your schedule with ease.
+                  Stop wondering where clients are hiding and start having calmer, more organized days.
                 </p>
                 <div className="flex justify-center mt-10 flex-col lg:flex-row">
                   <Button text="For Agencies" color="primary" className="px-14 flex mx-auto lg:mr-2" slug="#how-it-works" />
@@ -116,16 +116,35 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="text-white translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
-              <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Agencies</h2>
-              <p className="font-open max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
-              Qualified and skilled clinicians are just a click away. Whether your staff is
-              on vacation, out sick, or you just can’t keep up with the demand for referrals, we’ve got you covered!
+              <h2 className="font-merri text-5xl lg:text-6xl font-bold text-center lg:text-left">Agencies</h2>
+              <p className="font-open max-w-xl py-6 text-md lg:text-xl leading-relaxed text-center lg:text-left">
+                Qualified and skilled clinicians are just a click away. Whether your staff is
+                on vacation, out sick, or you just can’t keep up with the demand for referrals, we’ve got you covered!
               </p>
             </div>
           </div>
           <div><h1 className="font-merri text-5xl text-white text-center translate-y-24 md:translate-y-15 lg:translate-y-32">How It Works</h1></div>
           <div>
             <div className="text-white section flex justify-center h-screen flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
+              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[60%]">
+                <div className={`w-full ${styles['how-it-works-image-parent']}`}>
+                  <Image
+                    className={`${styles['how-it-works-image']}`}
+                    src="/images/agency-screenshot3.png"
+                    width={500}
+                    height={415}
+                    alt="computer"
+                  />
+                </div>
+              </div>
+              <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
+                <p className="font-open max-w-xl py-6 text-center lg:text-left text-md lg:text-xl">
+                  Simply input the visit type, target date, and address, then watch as the visit gets accepted
+                  almost instantly by one of our reliable clinicians.
+                </p>
+              </div>
+            </div>
+            <div className="text-white section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 w-11/12 mx-auto translate-y-[10vh]">
               <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[60%]">
                 <div className={`w-full ${styles['how-it-works-image-parent']}`}>
                   <Image
@@ -138,27 +157,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
-                <p className="font-open max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
-                Simply input the visit type, target date, and address, then watch as the visit gets accepted 
-                almost instantly by one of our reliable clinicians.
-                </p>
-              </div>
-            </div>
-            <div className="text-white section flex justify-center h-[50vh] flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 w-11/12 mx-auto translate-y-[10vh]">
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] lg:max-h-[unset] translate-y-[-100px] lg:translate-y-0 lg:w-[60%]">
-                <div className={`w-full ${styles['how-it-works-image-parent']}`}>
-                  <Image
-                    className={`${styles['how-it-works-image']}`}
-                    src="/images/agency-screenshot3.png"
-                    width={500}
-                    height={415}
-                    alt="computer"
-                  />
-                </div>
-              </div>
-              <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
-                <p className="font-open max-w-xl text-sm lg:text-lg py-6 text-center lg:text-left">
-                After the visit has been accepted, simply plot the appropriate clinician in your EMR and that’s it!
+                <p className="font-open max-w-xl text-md lg:text-xl py-6 text-center lg:text-left">
+                  After the visit has been accepted, simply plot the appropriate clinician in your EMR and that’s it!
                 </p>
               </div>
             </div>
@@ -167,7 +167,7 @@ const Home: NextPage = () => {
                 <div className={`w-full ${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
-                    src="/images/agency-screenshot3.png"
+                    src="/images/agency-screenshot1.png"
                     width={500}
                     height={415}
                     alt="computer"
@@ -175,9 +175,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="translate-y-[50px] lg:translate-y-0 lg:w-[40%]">
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 3</h2>
-                <p className="max-w-xl text-sm lg:text-lg py-6 text-center lg:text-left">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+                <p className="max-w-xl text-md lg:text-xl py-6 text-center lg:text-left">
+                  We’re here when you need us, and on standby when you don’t.
                 </p>
               </div>
             </div>
@@ -191,9 +190,9 @@ const Home: NextPage = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center w-full max-w-7xl space-x-0 lg:space-x-10 mx-auto pt-0 md:pt-32 lg:pt-0 justify-center w-11/12 h-screen overflow-x-hidden overflow-y-hidden lg:translate-y-[5vh]">
             <div>
-              <h2 className="font-merri text-5xl font-bold text-center lg:text-left">Clinicians</h2>
-              <p className="font-open max-w-xl py-6 text-sm lg:text-lg leading-relaxed text-center lg:text-left">
-              Download and register on the app using your preferred iPhone or Android device.
+              <h2 className="font-merri text-5xl lg:text-6xl font-bold text-center lg:text-left">Clinicians</h2>
+              <p className="font-open max-w-xl py-6 text-md lg:text-xl leading-relaxed text-center lg:text-left">
+                Download and register on the app using your preferred iPhone or Android device.
               </p>
             </div>
             <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-10vh] md:translate-y-0 lg:translate-y-[-50px]">
@@ -216,12 +215,30 @@ const Home: NextPage = () => {
           <h1 className="font-merri text-5xl text-5xl text-center translate-y-24 md:translate-y-15 lg:translate-y-32">How It Works</h1>
           <div className="md:translate-y-[20vh] lg:translate-y-0">
             <div className="section flex justify-center h-screen flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-              <div>
-                <p className="font-open max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
-                After going through a simple onboarding and vetting process, you will have access to visits in your area.
+              <div className='w-full lg:w-4/12'>
+                <p className="font-open max-w-xl py-6 text-center lg:text-left text-md lg:text-xl">
+                  After going through a simple onboarding and vetting process, you will have access to visits in your area.
                 </p>
               </div>
-              <div className="flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
+              <div className="w-full lg:w-6/12 flex justify-center shadow-standard relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
+                <div className={`${styles['how-it-works-image-parent']}`}>
+                  <Image
+                    className={`${styles['how-it-works-2-image']}`}
+                    src="/images/clinician-screenshot1.png"
+                    width={212}
+                    height={400}
+                    alt="iPhone"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
+              <div className='w-full lg:w-4/12'>
+                <p className="font-open max-w-xl py-6 text-center lg:text-left text-md lg:text-xl">
+                  Click on a visit to see details. Then either click “Accept” if you want it or just ignore it if you don’t.
+                </p>
+              </div>
+              <div className="w-full lg:w-6/12 flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
                 <div className={`${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-2-image']}`}
@@ -233,32 +250,14 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="section flex justify-center h-[50vh] flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-              <div>
-                <p className="font-open max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
-                Click on a visit to see details. Then either click “Accept” if you want it or just ignore it if you don’t.
-                </p>
-              </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
-                <div className={`${styles['how-it-works-image-parent']}`}>
-                  <Image
-                    className={`${styles['how-it-works-2-image']}`}
-                    src="/images/clinician-screenshot3.png"
-                    width={212}
-                    height={400}
-                    alt="iPhone"
-                  />
-                </div>
-              </div>
-            </div>
             <div className="section flex justify-center h-screen flex-col lg:flex-row flex-col-reverse items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto w-11/12">
-              <div>
-                <h2 className="font-merri text-4xl font-bold text-center lg:text-left pt-4">Title 3</h2>
-                <p className="max-w-xl py-6 text-center lg:text-left text-sm lg:text-lg">
-                  I&apos;m baby portland sustainable street art flannel next level four loko leggings DIY cray hoodie crucifix unicorn offal gluten-free. IPhone blog air plant, adaptogen narwhal waistcoat man braid prism deep v mustache you probably haven&apos;t heard of them austin. Plaid neutra readymade tofu flannel. Everyday carry marfa synth whatever snackwave keffiyeh. Helvetica master cleanse yuccie, bicycle rights 90&apos;s raclette vegan tumeric pork belly bushwick brooklyn.
+              <div className='w-full lg:w-4/12'>
+                <p className="max-w-xl py-6 text-center lg:text-left text-md lg:text-xl">
+                  Once accepted, you’ll be able to view the visit in the Jobs tab.
+                  Completed visits are paid out bi-weekly via ACH direct deposit.
                 </p>
               </div>
-              <div className="flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
+              <div className="w-full lg:w-6/12 flex justify-center shadow-standard mt-10 lg:mt-0 relative max-h-[30vh] translate-y-[-20vh] lg:translate-y-[-50px]">
                 <div className={`${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-2-image']}`}
