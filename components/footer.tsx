@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+
 export default function Footer() {
   return (
     <footer id="footer" className="gradient-bg py-14">
@@ -21,7 +23,7 @@ export default function Footer() {
           Copyright Notice
         </p>
         <div className="flex items-center gap-x-3">
-          <a href="">
+          <Link href="">
             <Image
               className="rounded-2xl"
               src="/images/facebook.svg"
@@ -29,7 +31,7 @@ export default function Footer() {
               height={40}
               alt="Test"
             />
-          </a>
+          </Link>
           {/* <Image
             className="rounded-2xl"
             src="/images/instagram.svg"
@@ -37,7 +39,7 @@ export default function Footer() {
             height={40}
             alt="Test"
           /> */}
-          <a href="">
+          <Link href="">
             <Image
               className="rounded-2xl"
               src="/images/twitter.svg"
@@ -45,8 +47,8 @@ export default function Footer() {
               height={40}
               alt="Test"
             />
-          </a>
-          <a href="">
+          </Link>
+          <Link href="">
             <Image
               className="rounded-2xl"
               src="/images/linkedin.svg"
@@ -54,7 +56,7 @@ export default function Footer() {
               height={40}
               alt="Test"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
