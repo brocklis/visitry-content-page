@@ -6,6 +6,8 @@ import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import Button from './button'
+import MeetingPopUp from './meetingPopUp'
+import Link from "next/link"
 
 const solutions = [
     {
@@ -48,56 +50,31 @@ export default function MobileDropdown(props: Props) {
                             <FontAwesomeIcon
                                 icon={faBars}
                                 className={`${open ? '' : ''} text-xl group-hover:text-opacity-80 transition ease-in-out duration-150`}
-                                style={{'color': props.color}}
+                                style={{ 'color': props.color }}
                                 aria-hidden="true"
                             />
                         </Popover.Button>
                         <Popover.Panel className="absolute z-10 w-screen md:max-w-none pt-5 px-4 right-0 sm:px-0 lg:max-w-3xl">
                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                 <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
-                                    <ul className="space-y-4 font-proximasemi text-chablack-300 hover:text-chablack-500">
+                                    <ul className="space-y-4 font-opensemi text-chablack-300 hover:text-chablack-500 text-xl">
                                         <li>
-                                            <a href="/product" className="text-xl">example</a>
+                                            <Link href="/#how-it-works">Agencies</Link>
                                         </li>
                                         <li>
-                                            <a href="/pricing" className="text-xl">example</a>
+                                            <Link href="/#how-it-works-2">Clinicians</Link>
                                         </li>
                                         <li>
-                                            <div className="bg-white rounded-2xl">
-                                                <Disclosure>
-                                                    {({ open }) => (
-                                                        <>
-                                                            <Disclosure.Button className="flex items-center font-proximasemi text-xl text-chablack-300 hover:text-chablack-500 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                                                                <span>example</span>
-                                                                <ChevronRightIcon
-                                                                    className={`${open ? 'transform rotate-90' : ''
-                                                                        } w-5 h-5 text-chagreen-300 ml-3`}
-                                                                />
-                                                            </Disclosure.Button>
-                                                            <Disclosure.Panel className="pl-3 pt-4 text-gray-500">
-                                                                <ul className="space-y-4 text-black font-proximasemi text-xl text-chablack-300 hover:text-chablack-500">
-                                                                    <a href="/news">
-                                                                        <li className="pb-4">
-                                                                            example
-                                                                        </li>
-                                                                    </a>
-                                                                    <a href="https://blog.chattr.ai">
-                                                                        <li>
-                                                                            example
-                                                                        </li>
-                                                                    </a>
-                                                                </ul>
-                                                            </Disclosure.Panel>
-                                                        </>
-                                                    )}
-                                                </Disclosure>
-                                            </div>
+                                            <Link href="/#faq">FAQ</Link>
                                         </li>
                                         <li>
-                                            <a href="/about" className="text-xl">about</a>
+                                            <Link href="/#contact">Contact</Link>
                                         </li>
                                     </ul>
-                                    <Button text="Button" color="primary" className="px-14 mr-2 text-sm" />
+                                    <MeetingPopUp
+                                        buttonStyle="px-10 font-open border-2 font-black rounded-2xl duration-300 py-3 border-lime-p hover:border-lime-s text-black bg-lime-p hover:bg-lime-s"
+                                        buttonName="Schedule a Demo"
+                                    />
                                 </div>
                             </div>
                         </Popover.Panel>

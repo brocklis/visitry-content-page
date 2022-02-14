@@ -26,3 +26,43 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.meeting-popup-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 3rem !important;
+  height: 800px;
+}
+
+.meeting-popup-container--inner {
+  height: 800px;
+}
+
+@media only screen and (max-width: 800px) {
+  .meeting-popup-container {
+    width: 95vw !important;
+    margin: 0 10px !important;
+  }
+  .meeting-popup-container--inner {
+    height: 85vh !important;
+  }
+
+  .hubspot-calendar {
+    width: 100% !important;
+    height: 80vh !important;
+  }
+}
+
+.meeting-pop-up-opacity {
+  margin-left: 0 !important;
+}
+
+.calendlyxbar {
+  margin-bottom: -8rem !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .calendlyxbar {
+    margin-bottom: 0 !important;
+  }
+}

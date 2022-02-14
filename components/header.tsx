@@ -4,6 +4,7 @@ import Logo from './logo'
 import Image from "next/image"
 import MobileDropdown from './mobileDropdown'
 import Link from "next/link"
+import MeetingPopUp from './meetingPopUp'
 
 type Props = {
     defaultColor?: string
@@ -40,9 +41,9 @@ export default function Header(props: Props) {
     return (
         <div style={{ backgroundColor: backgroundColor }} className={`fixed w-full py-4 top-0 z-10 ${additionalClasses}`} id="menu-header" ref={props.forwardedRef}>
             <div className="flex max-w-7xl w-11/12 mx-auto justify-end">
-                <ul className="flex text-md font-semibold text-white space-x-4 pb-6" style={{color: textColor}}>
-                    <li>Agency Login</li>
-                    <li>Clinician Login</li>
+                <ul className="flex text-md font-semibold text-white space-x-4 pb-6" style={{ color: textColor }}>
+                    <li><Link href="https://agency.visitry.com/login">Agency Login</Link></li>
+                    <li><Link href="https://user.visitry.com/login">Clinician Login</Link></li>
                 </ul>
             </div>
             <div className="flex">
@@ -60,7 +61,10 @@ export default function Header(props: Props) {
                             <li><Link href="/#faq">FAQ</Link></li>
                             <li><Link href="/#contact">Contact</Link></li>
                         </ul>
-                        <Button text="Schedule a Demo" color="primary" styling="px-10" />
+                        <MeetingPopUp
+                            buttonStyle="px-10 font-open border-2 font-black rounded-2xl duration-300 py-3 border-lime-p hover:border-lime-s text-black bg-lime-p hover:bg-lime-s"
+                            buttonName="Schedule a Demo"
+                        />
                     </div>
                 </div>
             </div>
