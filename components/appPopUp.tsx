@@ -51,7 +51,7 @@ export default function AppPopUp(props) {
                                                 height={41}
                                             />
                                         </div>
-                                        <a className="mt-7" target="_blank" href="https://play.google.com/store/apps/details?id=com.listertech.visitry&hl=en_US&gl=US">
+                                        <a className="mt-7" target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.listertech.visitry&hl=en_US&gl=US">
                                             <Image
                                                 src="/images/google-play.svg"
                                                 alt="Google Play Store, Titan Storage. Customers can manage their account, open gate/unit, and pay their bill from their Android."
