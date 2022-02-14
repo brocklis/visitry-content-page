@@ -20,7 +20,7 @@ export default function Footer() {
       </div>
       <div className="flex max-w-7xl mx-auto w-11/12 mt-10 items-center justify-between">
         <p className="text-white">
-          Copyright Notice
+          © 2022 Lister Technologies LLC
         </p>
         <div className="flex items-center gap-x-3">
           <Link href="">
