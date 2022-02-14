@@ -150,7 +150,7 @@ export default function ContactForm() {
 
                                                     <div className="col-span-6 sm:col-span-3">
                                                         <label htmlFor="usagetype" className="block text-sm font-medium text-gray-700">
-                                                            Agency of Clinician?
+                                                            Agency or Clinician?
                                                         </label>
                                                         <select
                                                             id="usagetype"

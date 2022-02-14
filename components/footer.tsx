@@ -13,14 +13,14 @@ export default function Footer() {
             alt="Test"
           />
           <p className="max-w-lg mt-6 text-white">
-            For clinicians, Visitry empowers you with the ability to fill your schedule with ease. Stop wondering
-            where clients are hiding and start having calmer, more organized days.
+            <span className="text-lg">Home Health Staffing <i>Reimagined</i></span><br/><br/>
+            Finding qualified clinicians for home health has never been easier. Visitry provides the tools necessary to connect excellent clinicians with agencies in need.
           </p>
         </div>
       </div>
       <div className="flex max-w-7xl mx-auto w-11/12 mt-10 items-center justify-between">
         <p className="text-white">
-          Copyright Notice
+          © 2022 Lister Technologies LLC
         </p>
         <div className="flex items-center gap-x-3">
           <Link href="">
