@@ -108,9 +108,10 @@ const Home: NextPage = () => {
               <div className={`mx-auto w-full flex justify-center ${styles['how-it-works-image-parent']}`}>
                 <Image
                   className={`${styles['how-it-works-image']}`}
-                  src="/images/desktop-login.png"
-                  width={500}
-                  height={415}
+                  src="/images/web-app-login.png"
+                  width={800}
+                  height={400}
+                  quality={100}
                   alt="computer"
                 />
               </div>
@@ -130,9 +131,10 @@ const Home: NextPage = () => {
                 <div className={`w-full ${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
-                    src="/images/agency-screenshot3.png"
-                    width={500}
-                    height={415}
+                    src="/images/web-app-create.png"
+                    width={800}
+                    height={400}
+                    quality={100}
                     alt="computer"
                   />
                 </div>
@@ -149,9 +151,10 @@ const Home: NextPage = () => {
                 <div className={`w-full ${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
-                    src="/images/agency-screenshot2.png"
-                    width={500}
-                    height={415}
+                    src="/images/web-app-open.png"
+                    width={800}
+                    height={400}
+                    quality={100}
                     alt="computer"
                   />
                 </div>
@@ -167,9 +170,10 @@ const Home: NextPage = () => {
                 <div className={`w-full ${styles['how-it-works-image-parent']}`}>
                   <Image
                     className={`${styles['how-it-works-image']}`}
-                    src="/images/agency-screenshot1.png"
-                    width={500}
-                    height={415}
+                    src="/images/web-app-accepted.png"
+                    width={800}
+                    height={400}
+                    quality={100}
                     alt="computer"
                   />
                 </div>
@@ -207,6 +211,7 @@ const Home: NextPage = () => {
                   src="/images/mobile-mockup.png"
                   width={212}
                   height={400}
+                  quality={100}
                   alt="iPhone"
                 />
               </div>
@@ -227,6 +232,7 @@ const Home: NextPage = () => {
                     src="/images/clinician-screenshot1.png"
                     width={212}
                     height={400}
+                    quality={100}
                     alt="iPhone"
                   />
                 </div>
@@ -245,6 +251,7 @@ const Home: NextPage = () => {
                     src="/images/clinician-screenshot2.png"
                     width={212}
                     height={400}
+                    quality={100}
                     alt="iPhone"
                   />
                 </div>
@@ -264,6 +271,7 @@ const Home: NextPage = () => {
                     src="/images/clinician-screenshot3.png"
                     width={212}
                     height={400}
+                    quality={100}
                     alt="iPhone"
                   />
                 </div>
