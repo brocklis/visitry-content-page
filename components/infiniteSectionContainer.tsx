@@ -42,10 +42,12 @@ export default function InfiniteSectionContainer(props: {className?: string, id?
             const subChild0Opacity = 1 - subChild1Opacity
             introRef.current.childNodes[0].children[0].style.opacity = Math.min(1, subChild0Opacity * 3)
             introRef.current.childNodes[0].children[1].style.opacity = Math.min(1, subChild1Opacity * 3)
+            if ( yTranslation > 0 ) {
+                headerRef.current.style.opacity = Math.max(0, 1 - (yTranslation / minScrollAmount))
+            }
             if ( yTranslation > introRef.current.childNodes[0].children[0].offsetHeight ) {
                 const subChild2Opacity = Math.min(1, ( yTranslation - introRef.current.childNodes[0].children[0].offsetHeight ) / introRef.current.childNodes[0].children[1].offsetHeight)
                 const newSubChild1Opacity = Math.min(1, (1 - subChild2Opacity) / 3)
-                headerRef.current.style.opacity = newSubChild1Opacity
                 introRef.current.childNodes[0].children[1].style.opacity = newSubChild1Opacity
                 introRef.current.childNodes[0].children[2].style.opacity = Math.min(1, subChild2Opacity * 3)
             }
