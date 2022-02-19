@@ -18,12 +18,12 @@ export function getTranslate(item: HTMLElement): number | number[] | undefined {
     return transArr
   }
 
-export default function InfiniteSectionContainer(props: {className?: string, id?: string, containerClassName?: string, heroClassName?: string, children: any}) {
+export default function InfiniteSectionContainer(props: {className?: string, id?: string, containerClassName?: string, heroClassName?: string, minScrollAmount?: number, children: any}) {
     const ref = useRef(null)
     const heroRef = useRef(null)
     const headerRef = useRef(null)
     const introRef = useRef(null)
-    const minScrollAmount = 100
+    const minScrollAmount = isNaN(props.minScrollAmount) ? 100 : props.minScrollAmount
     const handleScroll = (evt) => {
         const refStyle = window.getComputedStyle(ref.current)
         const refPaddingTop = parseInt(refStyle.getPropertyValue('padding-top'))
