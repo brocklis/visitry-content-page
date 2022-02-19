@@ -181,7 +181,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </InfiniteSectionContainer>
-        <InfiniteSectionContainer className="text-white gradient-bg h-[380vh] md:h-[370vh] content-box mb-0" id="how-it-works-2" heroClassName={`${styles['hero-parent']}`}>
+        <InfiniteSectionContainer className="text-white gradient-bg h-[380vh] md:h-[370vh] content-box mb-0 min-h-[2500px]" id="how-it-works-2" heroClassName={`${styles['hero-parent']}`}>
           <div className="w-full md:absolute top-0">
             <svg className="w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path fill="#563078" fillOpacity="1" d="M0,128L80,138.7C160,149,320,171,480,154.7C640,139,800,85,960,85.3C1120,85,1280,139,1360,165.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
