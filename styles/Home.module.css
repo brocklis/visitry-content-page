@@ -218,10 +218,21 @@
 @media (max-height: 700px) {
 }
 
+@media (min-width: 1024px) and (max-height: 978px) {
+  .how-it-works-2-image {
+    height: 90% !important;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 979px) {
+  .how-it-works-2-image {
+    height: 125% !important;
+  }
+}
+
 @media (min-width: 1024px) {
   .how-it-works-2-image {
     max-width: unset !important;
     max-height: unset !important;
-    height: 125% !important;
   }
 }

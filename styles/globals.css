@@ -38,6 +38,19 @@ a {
   height: 800px;
 }
 
+@media only screen and (min-width: 1024px) and (min-height: 600px) and (max-height: 768px) {
+  #how-it-works-2 {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1024px) {
+  .intro-parent .section:first-of-type {
+    box-sizing: border-box;
+    padding-top: 132px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .meeting-popup-container {
     width: 95vw !important;
