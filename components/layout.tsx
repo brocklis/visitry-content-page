@@ -4,16 +4,18 @@ import Footer from './footer'
 import Meta from './meta'
 
 type Props = {
-  preview?: boolean
   children: React.ReactNode
+  offsetMainContent?: boolean
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, offsetMainContent = false }: Props) => {
   const ref = useRef(null)
   const [ offsetTop, setOffsetTop ] = useState(0)
   useEffect(() => {
-    setOffsetTop(ref.current.offsetHeight)
-  }, [])
+    if (offsetMainContent) {
+      setOffsetTop(ref.current.offsetHeight)
+    }
+  }, [offsetMainContent])
   return (
     <>
       <Meta />
