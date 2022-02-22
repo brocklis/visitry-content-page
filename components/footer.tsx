@@ -22,9 +22,9 @@ export default function Footer() {
         <p className="text-white">
           © 2022 Lister Technologies LLC
           <div className="flex justify-start mt-5 space-x-10">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms">Terms</a>
-            <a href="/cookie-policy">Cookie Policy</a>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms">Terms</Link>
+            <Link href="/cookie-policy">Cookie Policy</Link>
           </div>
         </p>
         <div className="flex items-center gap-x-3 mt-7 lg:mt-0">
