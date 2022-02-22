@@ -13,16 +13,21 @@ export default function Footer() {
             alt="Test"
           />
           <p className="max-w-lg mt-6 text-white">
-            <span className="text-lg">Home Health Staffing <i>Reimagined</i></span><br/><br/>
+            <span className="text-lg">Home Health Staffing <i>Reimagined</i></span><br /><br />
             Finding qualified clinicians for home health has never been easier. Visitry provides the tools necessary to connect excellent clinicians with agencies in need.
           </p>
         </div>
       </div>
-      <div className="flex max-w-7xl mx-auto w-11/12 mt-10 items-center justify-between">
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto w-11/12 mt-10 items-start lg:items-center justify-between">
         <p className="text-white">
           © 2022 Lister Technologies LLC
+          <div className="flex justify-start mt-5 space-x-10">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms">Terms</a>
+            <a href="/cookie-policy">Cookie Policy</a>
+          </div>
         </p>
-        <div className="flex items-center gap-x-3">
+        <div className="flex items-center gap-x-3 mt-7 lg:mt-0">
           <Link href="">
             <Image
               className="rounded-2xl"
