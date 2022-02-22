@@ -14,7 +14,7 @@ export default function Footer() {
           />
           <p className="max-w-lg mt-6 text-white">
             <span className="text-lg">Home Health Staffing <i>Reimagined</i></span><br/><br/>
-            Finding qualified clinicians for home health has never been easier. Visitry provides the tools necessary to connect excellent clinicians with agencies in need.
+            Finding qualified clinicians for home health has never been easier. Visitry provides the tools necessary to connect excellent clinicians with agencies in need need needneedneedneed.
           </p>
         </div>
       </div>
