@@ -70,7 +70,7 @@ const Home: NextPage = () => {
   return (
     <>
       <PopUpVideo showModal={showModal} setShowModal={setShowModal} />
-      <Layout>
+      <Layout offsetMainContent={true}>
         <div className="relative gradient-bg z-[1] md:mb-[-8vw] lg:mb-[-12vw]">
           <SectionContainer className="relative text-white mt-20 pt-32 lg:pt-40 pb-[6rem] lg:pb-[1vh]">
             <div className="pt-36 flex flex-col lg:flex-row items-center max-w-7xl space-x-0 lg:space-x-10 mx-auto py-20">

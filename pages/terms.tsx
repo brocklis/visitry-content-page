@@ -1,5 +1,4 @@
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Layout from "../components/layout"
 
 const rawHTML = `
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style='font-size:18px;font-family:"Times New Roman",serif;color:black;'>&nbsp;</span></p>
@@ -175,15 +174,11 @@ const rawHTML = `
 `
 export default function PrivacyPolicy() {
     return (
-        <div>
-            <Header />
+        <Layout>
             <div className="gradient-bg py-20 pt-48">
-                <h1 className="font-merri font-bold text-2xl lg:text-4xl max-w-7xl mx-auto text-white w-11/12">End User License Agreement</h1>
+            <h1 className="font-merri font-bold text-2xl lg:text-4xl max-w-7xl mx-auto text-white w-11/12">End User License Agreement</h1>
             </div>
-            <div className="py-7 lg:py-20 max-w-7xl mx-auto w-11/12" dangerouslySetInnerHTML={{ __html: rawHTML }}>
-
-            </div>
-            <Footer />
-        </div>
+            <div className="py-7 lg:py-20 max-w-7xl mx-auto w-11/12" dangerouslySetInnerHTML={{ __html: rawHTML }}></div>
+        </Layout>
     )
 }
